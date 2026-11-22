@@ -1,6 +1,0 @@
-# Local dependencies and caches
-node_modules/
-__pycache__/
-*.pyc
-# Microsoft Office temporary lock files
-~$*
