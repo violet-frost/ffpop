@@ -122,5 +122,13 @@
       "text": "相邻同色两个即可收集，先完成草莓目标",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "maxUses": 0
+  },
+  "gravity": "flow"
 }

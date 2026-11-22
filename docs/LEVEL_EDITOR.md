@@ -65,3 +65,11 @@ node tests/editor.browser.test.cjs
 ```
 
 Chrome浏览器测试使用临时配置，Node 22+；结果截图保存在`tests/screenshots`。真人试玩仍需单独记录，所有交付关卡暂标“待真人试玩”。
+
+## 四种辅助道具配置
+
+右侧“辅助道具”编辑每种配额、总使用上限及教学类型。试玩区使用同一规则，支持选取目标、花洒预览、骰子二次确认和取消；不扣普通步数，重开恢复。Excel在原A—Z后追加AA—AF字段，验证记录L—O为独立辅助策略样本。完整规则及投放见BOOSTER_SYSTEM.md。新版草稿使用独立v3键，旧草稿保留。新增验证命令：node tests/boosters.test.cjs 与 node tests/boosters.browser.test.cjs。
+
+## 障碍绕流掉落
+
+新增“掉落规则”下拉框，flow为当前50关默认、segment为历史模式；试玩直接使用共享引擎。Excel AG列同步该字段。v4草稿自动迁移原v3编辑并保留旧键。完整入口、斜落、封闭空格与路径动画规则见GRAVITY_RULES.md。新增node tests/gravity.test.cjs和node tests/gravity.browser.test.cjs。

@@ -121,5 +121,13 @@
       "text": "两侧目标均可先做，比较当前可用组合",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 0,
+    "dice": 0,
+    "maxUses": 1
+  },
+  "gravity": "flow"
 }

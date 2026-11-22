@@ -5,3 +5,7 @@
 .library{min-width:0}#level-list{max-width:100%}
 
 .library-head label,.canvas-heading>div{min-width:0}@media(max-width:480px){.canvas-toolbar{flex-wrap:wrap}.library-head label{min-width:0}}
+
+.editor-booster-field{display:grid;grid-template-columns:35px 1fr 65px;align-items:center;gap:8px}.booster-art{width:35px;height:35px;flex:none}#test-boosters{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}#test-boosters button{display:flex;align-items:center;gap:4px;font-size:11px;padding:5px 8px}#test-boosters [aria-pressed=true]{background:#fff0a8;outline:2px solid #c49a44}
+
+.paint-cell.empty{background:#173f4933;box-shadow:inset 0 0 0 1px #9ebeb044}

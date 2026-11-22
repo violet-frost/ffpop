@@ -126,5 +126,13 @@
       "text": "目标缺口比当前数量更重要",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 1,
+    "maxUses": 2
+  },
+  "gravity": "flow"
 }

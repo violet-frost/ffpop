@@ -130,5 +130,13 @@
       "text": "分区分别融冰，选择先做的一侧",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 1,
+    "maxUses": 2
+  },
+  "gravity": "flow"
 }

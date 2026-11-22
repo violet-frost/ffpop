@@ -127,5 +127,13 @@
   "opening": {
     "index": 67,
     "created": "rocket"
-  }
+  },
+  "boosters": {
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "maxUses": 0
+  },
+  "gravity": "flow"
 }

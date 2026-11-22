@@ -121,5 +121,14 @@
       "text": "通过邻消和直线道具解决木箱",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "maxUses": 1
+  },
+  "boosterTutorial": "hammer",
+  "gravity": "flow"
 }

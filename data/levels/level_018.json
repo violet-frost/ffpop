@@ -133,5 +133,13 @@
     "index": 59,
     "target": 60,
     "combo": "rainbow+bomb"
-  }
+  },
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 0,
+    "maxUses": 1
+  },
+  "gravity": "flow"
 }

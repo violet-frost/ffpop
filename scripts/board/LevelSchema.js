@@ -16,6 +16,7 @@ function validate(l){const errors=[];const int=(v,a,b)=>Number.isInteger(v)&&v>=
  if(!int(l.moves,1,99))errors.push('步数须为1—99整数');
  if(!int(l.colors,3,6))errors.push('色数须为3—6整数');
  if(!int(l.seed,0,4294967295))errors.push('种子须为无符号32位整数');
+ if(l.gravity!==undefined&&!['segment','flow'].includes(l.gravity))errors.push('gravity须为segment或flow');
  if(!int(l.shape,0,4))errors.push('shape须为0—4整数');
  let boxes=0,ice=0,active=0;const decoded=[];
  if(!Array.isArray(l.layout)||l.layout.length!==9||l.layout.some(row=>!Array.isArray(row)||row.length!==8))errors.push('layout必须为9×8编码数组');
@@ -26,6 +27,8 @@ function validate(l){const errors=[];const int=(v,a,b)=>Number.isInteger(v)&&v>=
  if(active<12)errors.push('有效格不可少于12个');
  if(!Array.isArray(l.goals)||l.goals.length<1||l.goals.length>4)errors.push('目标须为1—4项');
  else{const seen=new Set();for(const g of l.goals){if(!g||!['color','box','ice'].includes(g.kind)||!int(g.target,1,999)){errors.push('目标类型或数量无效');continue;}const key=g.kind+String(g.color??'');if(seen.has(key))errors.push('目标重复');seen.add(key);if(g.kind==='color'&&!int(g.color,0,l.colors-1))errors.push('目标色号无效');if(g.kind==='box'&&g.target>boxes)errors.push('木箱目标超过初始数量');if(g.kind==='ice'&&g.target>ice)errors.push('冰层目标超过初始数量');}}
+ if(l.boosters!==undefined){const b=l.boosters;if(!b||typeof b!=='object'||Array.isArray(b)||Object.keys(b).some(k=>!['hammer','glove','watering','dice','maxUses'].includes(k))||['hammer','glove','watering','dice'].some(k=>!int(b[k],0,3))||!int(b.maxUses,0,8)||b.maxUses>['hammer','glove','watering','dice'].reduce((n,k)=>n+(b[k]||0),0))errors.push('辅助道具配额无效：每种0—3，总使用上限0—8且不超过配额总和');}
+ if(l.boosterTutorial!==undefined&&!['hammer','glove','watering','dice'].includes(l.boosterTutorial))errors.push('辅助道具教学类型无效');
  if(l.refill!==undefined&&(!Array.isArray(l.refill)||l.refill.length>10000||l.refill.some(c=>!int(c,0,l.colors-1))))errors.push('refill必须为有效色号数组，最多10000项');
  if(l.design!==undefined){if(!l.design||typeof l.design!=='object'||typeof l.design.title!=='string'||l.design.title.length>60||typeof l.design.intent!=='string'||l.design.intent.length>300||!int(l.design.difficulty,1,5)||!['teach','practice','twist','test','rest','showcase'].includes(l.design.beat))errors.push('design字段无效');}
  if(l.tutorial!==undefined){if(!Array.isArray(l.tutorial)||l.tutorial.length>20)errors.push('tutorial必须为数组');else for(const t of l.tutorial)if(!t||!int(t.turn,0,99)||typeof t.text!=='string'||t.text.length>150||!Array.isArray(t.cells)||t.cells.some(i=>!int(i,0,71)||!decoded[i]))errors.push('教学文字、回合或坐标无效');}

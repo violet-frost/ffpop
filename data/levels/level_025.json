@@ -125,5 +125,13 @@
       "text": "用分区布局检验空间理解",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 1,
+    "maxUses": 1
+  },
+  "gravity": "flow"
 }

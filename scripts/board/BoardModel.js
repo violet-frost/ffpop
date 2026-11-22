@@ -6,7 +6,7 @@ const {CHAPTERS,LEVELS}=typeof module!=='undefined'&&module.exports
  ? require('../managers/LevelRepository.cjs').load() : root.BloomData;
 function random(seed){let n=seed>>>0;return()=>{n+=0x6D2B79F5;let t=n;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return ((t^(t>>>14))>>>0)/4294967296;};}
 class Game{
- constructor(level,seed){this.level=level;this.rows=level.rows;this.cols=level.cols;this.rng=random(seed===undefined?level.seed:seed);this.moves=level.moves;this.score=0;this.turns=0;this.collected={};this.status='playing';this.shuffles=0;this.serial=0;this.board=[];this.refillIndex=0;
+ constructor(level,seed){this.level=level;this.rows=level.rows;this.cols=level.cols;this.rng=random(seed===undefined?level.seed:seed);this.moves=level.moves;this.score=0;this.turns=0;this.collected={};this.status='playing';this.shuffles=0;this.serial=0;this.board=[];this.refillIndex=0;this.boosters={hammer:0,glove:0,watering:0,dice:0,maxUses:0,...level.boosters};this.boosterUses=0;
  if(level.layout){const errors=Schema.validate(level);if(errors.length)throw new Error(errors.join('；'));this.board=level.layout.flat().map(code=>{const t=Schema.decode(code);return t?{...t,id:++this.serial}:null;});this.ensureMoves();return;}
  for(let r=0;r<this.rows;r++)for(let c=0;c<this.cols;c++){const hole=this.isHole(r,c);this.board.push(hole?null:this.tile());}
  const spots=this.board.map((t,i)=>t&&this.row(i)>1?i:-1).filter(i=>i>=0);this.mix(spots);
@@ -28,7 +28,25 @@ class Game{
  area(i,radius){const a=[];for(let r=0;r<this.rows;r++)for(let c=0;c<this.cols;c++)if(Math.abs(r-this.row(i))<=radius&&Math.abs(c-this.col(i))<=radius)a.push(r*this.cols+c);return a;}
  line(i,width=0,both=false){const a=[];const t=this.board[i];for(let j=0;j<this.board.length;j++)if((both||t?.axis==='h')&&Math.abs(this.row(j)-this.row(i))<=width||(both||t?.axis!=='h')&&Math.abs(this.col(j)-this.col(i))<=width)a.push(j);return a;}
  effect(i,selectedColor){const t=this.board[i];if(!t)return[];if(t.kind==='rocket')return this.line(i);if(t.kind==='bomb')return this.area(i,1);if(t.kind==='rainbow'){const counts=Array(this.level.colors).fill(0);this.board.forEach(x=>{if(x?.color!==undefined)counts[x.color]++;});const color=selectedColor===undefined?counts.indexOf(Math.max(...counts)):selectedColor;return this.board.map((x,j)=>x?.color===color?j:-1).filter(j=>j>=0).concat(i);}return[];}
- collapse(){for(let c=0;c<this.cols;c++){let segment=[];const flush=()=>{const tiles=segment.map(i=>this.board[i]).filter(Boolean);for(let j=segment.length-1;j>=0;j--)this.board[segment[j]]=tiles.length?tiles.pop():this.tile();segment=[];};for(let r=0;r<this.rows;r++){const i=r*this.cols+c;if(this.isHole(r,c)||this.board[i]?.kind==='box')flush();else segment.push(i);}flush();}}
+ collapseFlow(){
+  const paths=new Map(),point=i=>({row:this.row(i),col:this.col(i)});
+  const move=(tile,from,to,spawn=false,entry=0)=>{if(from===to&&!spawn)return;let path=paths.get(tile.id);if(!path){path={id:tile.id,points:[typeof from==='number'?point(from):from],...(spawn?{spawn:true,entry}:{})};paths.set(tile.id,path);}path.points.push(point(to));};
+  for(let pass=0;pass<this.board.length*this.rows;pass++){
+   // Pack vertically first. Only a static top edge is a refill inlet; boxes never create inlets.
+   for(let c=0;c<this.cols;c++){let segment=[];const flush=()=>{if(!segment.length)return;const tiles=segment.flatMap(i=>this.board[i]?[{tile:this.board[i],from:i}]:[]),entry=this.row(segment[0]),refill=entry===0||this.isHole(entry-1,c);let spawned=0;
+    for(let j=segment.length-1;j>=0;j--){const to=segment[j],item=tiles.pop();if(item){this.board[to]=item.tile;move(item.tile,item.from,to);}else if(refill){const tile=this.tile();this.board[to]=tile;move(tile,{row:entry-1-spawned++,col:c},to,true,entry);}else this.board[to]=null;}segment=[];};
+    for(let r=0;r<this.rows;r++){const i=r*this.cols+c;if(this.isHole(r,c)||this.board[i]?.kind==='box')flush();else segment.push(i);}flush();
+   }
+   let diagonal=false;
+   // Bottom to top, left to right, left donor first: deterministic and independent of refill RNG.
+   for(let r=this.rows-1;r>0;r--)for(let c=0;c<this.cols;c++){const to=r*this.cols+c;if(this.isHole(r,c)||this.board[to])continue;
+    for(const dc of [-1,1]){const sc=c+dc;if(sc<0||sc>=this.cols||this.isHole(r-1,sc)||this.isHole(r,sc)||this.board[r*this.cols+sc]?.kind==='box')continue;const from=(r-1)*this.cols+sc,tile=this.board[from];if(!tile||tile.kind==='box')continue;this.board[to]=tile;this.board[from]=null;move(tile,from,to);diagonal=true;break;}
+   }
+   if(!diagonal){this.fallPaths=[...paths.values()];return;}
+  }
+  throw new Error('Gravity flow did not settle');
+ }
+ collapse(){if(this.level.gravity==='flow')return this.collapseFlow();this.fallPaths=null;for(let c=0;c<this.cols;c++){let segment=[];const flush=()=>{const tiles=segment.map(i=>this.board[i]).filter(Boolean);for(let j=segment.length-1;j>=0;j--)this.board[segment[j]]=tiles.length?tiles.pop():this.tile();segment=[];};for(let r=0;r<this.rows;r++){const i=r*this.cols+c;if(this.isHole(r,c)||this.board[i]?.kind==='box')flush();else segment.push(i);}flush();}}
  click(i,target){
  if(this.board[i]?.kind==='rainbow'){
   const other=this.board[target];
@@ -48,7 +66,26 @@ class Game{
  for(const j of boxes){this.board[j]=null;removed.push(j);this.add('box');}
  if(created)this.board[i]={...created,id:++this.serial};
  this.moves--;this.turns++;this.score+=removed.length*60+fired.length*150+(combo?300:0);this.collapse();this.status=this.won()?'won':this.moves<=0?'lost':'playing';const shuffled=this.status==='playing'&&this.ensureMoves();
- return{valid:true,...(swap?{swap}:{}),effects,removed,melted,fired,created:created?.kind,combo,shuffled,count:removed.length,status:this.status};
+ return{valid:true,...(swap?{swap}:{}),effects,removed,melted,fired,...(this.fallPaths?{fallPaths:this.fallPaths}:{}),created:created?.kind,combo,shuffled,count:removed.length,status:this.status};
+ }
+ boosterAvailable(kind){return this.status==='playing'&&['hammer','glove','watering','dice'].includes(kind)&&this.boosters[kind]>0&&this.boosterUses<this.boosters.maxUses;}
+ boosterTargets(kind,index){const t=this.board[index];if(!Number.isInteger(index)||!t)return[];if(kind==='hammer')return ['normal','box'].includes(t.kind)?[index]:[];if(kind==='watering')return t.kind==='normal'&&!t.ice?this.neighbors(index).filter(n=>this.board[n]?.kind==='normal'&&!this.board[n].ice&&this.board[n].color!==t.color):[];if(kind==='glove'&&t.kind!=='box'&&!t.ice)return this.neighbors(index).filter(n=>{const x=this.board[n];return x&&x.kind!=='box'&&!x.ice&&Schema.encode(x)!==Schema.encode(t);});return[];}
+ useBooster(kind,index,target){
+  if(!this.boosterAvailable(kind))return{valid:false,reason:'booster-unavailable'};
+  const removed=[],melted=[],changed=[];let shuffled=false,swap;
+  if(kind==='dice'){
+   const indices=this.board.flatMap((t,i)=>!this.isHole(this.row(i),this.col(i))?[i]:[]),before=this.board.slice(),codes=before.map(Schema.encode).join(','),rng=random((this.level.seed^Math.imul(this.boosterUses+1,2654435761))>>>0);let found=false;
+   for(let attempt=0;attempt<256;attempt++){const tiles=indices.map(i=>before[i]);for(let j=tiles.length-1;j>0;j--){const k=Math.floor(rng()*(j+1));[tiles[j],tiles[k]]=[tiles[k],tiles[j]];}indices.forEach((i,j)=>this.board[i]=tiles[j]);if(this.hasMove()&&this.board.map(Schema.encode).join(',')!==codes){found=true;break;}}
+   if(!found){this.board=before;return{valid:false,reason:'booster-no-change'};}shuffled=true;changed.push(...indices);
+  }else{
+   const targets=this.boosterTargets(kind,index);if(!targets.length)return{valid:false,reason:'booster-target'};
+   const t=this.board[index];
+   if(kind==='hammer'){if(t.ice){delete t.ice;this.add('ice');melted.push(index);}else{this.add(t.kind==='box'?'box':'color'+t.color);removed.push(index);this.board[index]=null;this.score+=60;this.collapse();}if(!this.won())shuffled=this.ensureMoves();}
+   if(kind==='glove'){if(!targets.includes(target))return{valid:false,reason:'booster-target'};[this.board[index],this.board[target]]=[this.board[target],this.board[index]];if(!this.hasMove()){[this.board[index],this.board[target]]=[this.board[target],this.board[index]];return{valid:false,reason:'booster-no-move'};}swap={from:index,to:target};changed.push(index,target);}
+   if(kind==='watering'){for(const n of targets){this.board[n].color=t.color;changed.push(n);}}
+  }
+  this.boosters[kind]--;this.boosterUses++;this.status=this.won()?'won':'playing';
+  return{valid:true,booster:kind,effects:[],removed,melted,changed,...(kind==='hammer'&&removed.length&&this.fallPaths?{fallPaths:this.fallPaths}:{}),fired:[],created:null,combo:null,shuffled,count:removed.length,status:this.status,...(swap?{swap}:{})};
  }
  stars(){if(this.status!=='won')return 0;const ratio=this.moves/this.level.moves;return ratio>=.35?3:ratio>=.15?2:1;}
  hint(){let best=null;const visited=new Set();for(let i=0;i<this.board.length;i++){const t=this.board[i];if(!t||t.kind==='box'||visited.has(i))continue;const group=t.kind==='normal'?this.group(i):[i];group.forEach(j=>visited.add(j));if(t.kind==='normal'&&group.length<2)continue;let target;

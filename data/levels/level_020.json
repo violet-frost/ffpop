@@ -152,5 +152,13 @@
     {
       "index": 67
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 1,
+    "maxUses": 1
+  },
+  "gravity": "flow"
 }

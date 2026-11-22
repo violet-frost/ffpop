@@ -121,5 +121,14 @@
       "text": "两侧都可开路，比较道具覆盖效率",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 1,
+    "maxUses": 1
+  },
+  "boosterTutorial": "dice",
+  "gravity": "flow"
 }

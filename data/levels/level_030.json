@@ -125,5 +125,13 @@
       "text": "综合缺口、木箱与冰层的空间挑战",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 1,
+    "maxUses": 1
+  },
+  "gravity": "flow"
 }

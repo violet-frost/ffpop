@@ -57,6 +57,8 @@ function create(id,seed){const k=id-1,colors=id<=2?3:id<=30?4:5,rng=random(seed)
  if(id===10)L.tutorial.push({turn:1,text:'火箭留在了点击位置。点击它，与相邻炸弹一起绽放！',cells:[67,59]});
  if(id===20)L.tutorial.push({turn:1,text:'炸弹已经落到火箭旁。点击炸弹，用组合打通目标区。',cells:[59,67]});
  if(id===11)L.tutorial.push({turn:1,text:'先点击彩虹，再选上下左右相邻的花果，决定消除颜色。',cells:[]});
+ L.boosters={hammer:id>=5?1:0,glove:id>=12?1:0,watering:id>=16?1:0,dice:id>=19?1:0,maxUses:id<5?0:id>=21&&L.design.beat!=='test'?2:1};if([5,12,16,19].includes(id))L.boosterTutorial={5:'hammer',12:'glove',16:'watering',19:'dice'}[id];if([12,16,19].includes(id))for(const k of ['hammer','glove','watering','dice'])if(k!==L.boosterTutorial)L.boosters[k]=0;
+ L.gravity='flow';
  return L;
 }
 function play(l,mode=0){const g=new Game(l),rng=random(9821+mode*101),actions=[];let combos=0;const prefix=l.demonstration||(l.opening?[l.opening]:[]);

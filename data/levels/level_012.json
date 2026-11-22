@@ -127,5 +127,14 @@
       "text": "比较两种目标缺口，决定彩虹清哪种",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 0,
+    "glove": 1,
+    "watering": 0,
+    "dice": 0,
+    "maxUses": 1
+  },
+  "boosterTutorial": "glove",
+  "gravity": "flow"
 }

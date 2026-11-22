@@ -126,5 +126,13 @@
       "text": "融冰与颜色目标分开计算，保留收集机会",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 0,
+    "dice": 0,
+    "maxUses": 1
+  },
+  "gravity": "flow"
 }

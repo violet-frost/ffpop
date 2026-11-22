@@ -127,5 +127,13 @@
       "text": "根据目标选颜色，单个点击不扣步",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "maxUses": 0
+  },
+  "gravity": "flow"
 }

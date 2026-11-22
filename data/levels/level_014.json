@@ -127,5 +127,13 @@
   "opening": {
     "index": 43,
     "combo": "rocket+bomb"
-  }
+  },
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 0,
+    "dice": 0,
+    "maxUses": 1
+  },
+  "gravity": "flow"
 }

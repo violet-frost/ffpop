@@ -121,5 +121,13 @@
       "text": "双炸弹覆盖更宽目标区，短关回落",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 1,
+    "maxUses": 2
+  },
+  "gravity": "flow"
 }

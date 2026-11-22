@@ -121,5 +121,14 @@
       "text": "用熟悉机制轻松完成，回落学习压力",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 0,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "maxUses": 1
+  },
+  "boosterTutorial": "watering",
+  "gravity": "flow"
 }

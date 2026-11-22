@@ -130,5 +130,13 @@
       "text": "打开木箱后再调整道具落点",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 1,
+    "maxUses": 2
+  },
+  "gravity": "flow"
 }

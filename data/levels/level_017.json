@@ -126,5 +126,13 @@
   ],
   "opening": {
     "index": 51
-  }
+  },
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 0,
+    "maxUses": 1
+  },
+  "gravity": "flow"
 }

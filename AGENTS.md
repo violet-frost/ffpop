@@ -20,3 +20,17 @@
 - python build.py同时生成index.html和level-editor.html；编辑器源码在tools/editor/，不要单独修改产物。
 - Excel和JSON导入使用tools/level_io.py；验证使用tools/validate_levels.cjs；Excel由tools/export_workbook.py调用build_workbook.mjs读取同一JSON源生成。
 - 改关卡后运行authoring.test.cjs与test_level_io.py；改编辑器后运行editor.browser.test.cjs。验证报告和解法按配置哈希匹配，禁止以旧快照充当新配置结果。
+
+## 四种辅助道具
+
+- Game.useBooster负责确定性规则与配额，boosterTargets供游戏/编辑器预览。无效和取消不扣次数，辅助操作不改变普通moves/turns。
+- 骰子随机排列所有非缺口内容（含木箱、冰层、特殊棋子），保留数量身份并保证普通合法操作；不能重生成目标或改变缺口。
+- 新增数据字段需同步LevelSchema、编辑器、level_io.py与build_workbook.mjs。修改道具执行boosters.test.cjs、boosters.browser.test.cjs及editor.browser.test.cjs。
+- 花园工具参考图来源为本次用户附件，保留garden_boosters.png，SVG视口取图，不覆盖garden_pieces.png。
+
+## 障碍绕流
+
+- 当前50关显式gravity=flow；省略或segment只作旧规则兼容。先直落，静态顶边/缺口下入口补充，再侧上斜落；木箱不是新入口。
+- 封闭区域允许运行时null空格，不能把空格当成永久缺口；几何以isHole为准。骰子排列所有有效格，包含运行时空格。
+- fallPaths由引擎记录，MotionSystem只呈现；遮罩排除完整木箱/缺口，静态下区域入口独立裁剪。保留动画锁、中断和清理。
+- 修改重力运行gravity.test.cjs、gravity.browser.test.cjs及既有全部规则/页面/编辑器测试。重新生成50关解法和验证报告、Excel；16路样本之外的参考搜索不得计入比例。

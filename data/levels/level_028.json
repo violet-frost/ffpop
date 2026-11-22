@@ -125,5 +125,13 @@
       "text": "先融化关键色块，再处理附近木箱",
       "cells": []
     }
-  ]
+  ],
+  "boosters": {
+    "hammer": 1,
+    "glove": 1,
+    "watering": 1,
+    "dice": 1,
+    "maxUses": 2
+  },
+  "gravity": "flow"
 }

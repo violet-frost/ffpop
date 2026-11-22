@@ -15,3 +15,15 @@
 - `node tests/ui-flow.browser.test.cjs`：参考图改版后的主页、空白入口、道路地图、目标确认、木质 HUD、六种手机布局、胜利与章节解锁完整流程。
 
 方案一新增：`node tests/authoring.test.cjs`、`python tests/test_level_io.py`、`node tests/editor.browser.test.cjs`。Excel生成使用`python tools/export_workbook.py`；完整流程见`docs/LEVEL_EDITOR.md`。
+
+- `node tests/sprite-visibility.browser.test.cjs`：实际截图像素回归，模拟掉落时隐藏原格子、显示副本，检查六类花果与横向火箭仍能正常绘制。防止 SVG 裁切定义继承原格子的隐藏状态而使动画副本消失。
+
+## 四种辅助道具
+
+运行 node tests/boosters.test.cjs（11项规则边界）与 node tests/boosters.browser.test.cjs（真实UI和6种手机尺寸）。编辑器浏览器测试增加四种工具配置/使用/重开，Excel测试增加配额往返与总次数拒绝。validate_levels.cjs独立记录无辅助和辅助各800路程序策略，均不是人类通关率。
+
+## 障碍绕流
+
+node tests/gravity.test.cjs验证8组规则边界；node tests/gravity.browser.test.cjs验证路径、遮罩、封闭空格、破箱、缺口下入口与动画取消。50关使用gravity=flow；历史fixtures省略gravity，继续segment基准。参考检索超出16路的部分单独记录，不计入策略比例。
+
+- `node tests/play-layout.browser.test.cjs`：四道具底栏、六种手机棋盘布局、消除与掉落阶段的动画时钟暂停/继续、退出取消/确认及重进清理。原提示、玩法、重开和设置从右上角暂停菜单进入。

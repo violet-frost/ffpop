@@ -127,5 +127,13 @@
   "opening": {
     "index": 51,
     "created": "bomb"
-  }
+  },
+  "boosters": {
+    "hammer": 1,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "maxUses": 1
+  },
+  "gravity": "flow"
 }

@@ -23,6 +23,39 @@ class LevelIOChecks(unittest.TestCase):
       data=ET.tostring(root,encoding='utf-8',xml_declaration=True)
      dst.writestr(name,data)
    levels=io.load_xlsx(changed);self.assertEqual(levels[0]['moves'],11);self.assertEqual(levels[0]['layout'][0][0],'#');self.assertEqual(levels[0]['boxes'],1);io.validate(levels)
+ def test_booster_counts_import_and_reject_invalid_shared_cap(self):
+  with tempfile.TemporaryDirectory(prefix='bloom-boosters-xlsx-') as folder:
+   file=Path(folder)/'boosters.xlsx'
+   with zipfile.ZipFile(BOOK) as src,zipfile.ZipFile(file,'w',zipfile.ZIP_DEFLATED) as dst:
+    for name in src.namelist():
+     data=src.read(name)
+     if name=='xl/worksheets/sheet2.xml':
+      root=ET.fromstring(data)
+      for ref in ['AA11','AE11']:
+       cell=root.find(f'.//m:c[@r="{ref}"]',NS);self.assertIsNotNone(cell)
+       for child in list(cell):cell.remove(child)
+       cell.attrib.pop('t',None);ET.SubElement(cell,'{'+NS['m']+'}v').text='2'
+      data=ET.tostring(root,encoding='utf-8',xml_declaration=True)
+     dst.writestr(name,data)
+   levels=io.load_xlsx(file);self.assertEqual(levels[4]['boosters']['hammer'],2);self.assertEqual(levels[4]['boosters']['maxUses'],2);self.assertEqual(levels[4]['boosterTutorial'],'hammer');io.validate(levels)
+   levels[4]['boosters']['maxUses']=8
+   with self.assertRaises(ValueError):io.validate(levels)
+ def test_gravity_mode_round_trip_and_validation(self):
+  self.assertTrue(all(l['gravity']=='flow' for l in io.load_xlsx(BOOK)))
+  with tempfile.TemporaryDirectory(prefix='bloom-gravity-xlsx-') as folder:
+   file=Path(folder)/'gravity.xlsx'
+   with zipfile.ZipFile(BOOK) as src,zipfile.ZipFile(file,'w',zipfile.ZIP_DEFLATED) as dst:
+    for name in src.namelist():
+     data=src.read(name)
+     if name=='xl/worksheets/sheet2.xml':
+      root=ET.fromstring(data);cell=root.find('.//m:c[@r="AG7"]',NS);self.assertIsNotNone(cell)
+      for child in list(cell):cell.remove(child)
+      cell.set('t','inlineStr');ET.SubElement(ET.SubElement(cell,'{'+NS['m']+'}is'),'{'+NS['m']+'}t').text='segment'
+      data=ET.tostring(root,encoding='utf-8',xml_declaration=True)
+     dst.writestr(name,data)
+   levels=io.load_xlsx(file);self.assertEqual(levels[0]['gravity'],'segment');io.validate(levels)
+   levels[0]['gravity']='invalid'
+   with self.assertRaises(ValueError):io.validate(levels)
  def test_invalid_import_keeps_every_source_file_unchanged(self):
   before={p:p.read_bytes() for p in (R/'data/levels').glob('*.json')}
   with tempfile.TemporaryDirectory(prefix='bloom-import-') as folder:

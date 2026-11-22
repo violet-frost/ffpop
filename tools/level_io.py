@@ -4,7 +4,7 @@ import argparse, copy, json, os, subprocess, sys, tempfile, zipfile
 import xml.etree.ElementTree as ET
 R=Path(__file__).resolve().parents[1]
 NS={'m':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
-HEADERS=['id','chapter','title','moves','colors','seed','difficulty','beat','focus','intent']+[f'goal{i}_{key}' for i in range(1,5) for key in ['kind','color','target']]+['tutorial_json','opening_json','demonstration_json','refill_json']
+HEADERS=['id','chapter','title','moves','colors','seed','difficulty','beat','focus','intent']+[f'goal{i}_{key}' for i in range(1,5) for key in ['kind','color','target']]+['tutorial_json','opening_json','demonstration_json','refill_json']+['booster_hammer','booster_glove','booster_watering','booster_dice','booster_maxUses','booster_tutorial','gravity']
 def read_levels():return [json.loads(p.read_text(encoding='utf-8-sig')) for p in sorted((R/'data/levels').glob('level_*.json'))]
 def read_sheets(file):
  with zipfile.ZipFile(file) as z:
@@ -71,6 +71,9 @@ def load_xlsx(file):
   for key in ['tutorial','opening','demonstration','refill']:
    v=row[key+'_json']
    if v!='':l[key]=json.loads(v)
+  l['boosters']={k:row['booster_'+k] for k in ['hammer','glove','watering','dice','maxUses']}
+  if row['booster_tutorial']!='':l['boosterTutorial']=row['booster_tutorial']
+  l['gravity']=row['gravity']
   out.append(l)
  return sorted(out,key=lambda l:l['id'])
 
