@@ -1,0 +1,10103 @@
+[
+  {
+    "id": 1,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 4,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 2,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 26,
+        "target": 34
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 4,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 2,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 26,
+        "target": 34
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 6,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 68
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 48
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 6,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 68
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 48
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 5,
+    "remaining": 7,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 38
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 5,
+    "remaining": 7,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 38
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 12,
+    "remaining": 0,
+    "progress": 0.9642857142857143,
+    "minGoalProgress": 0.9285714285714286,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 71
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 10,
+    "remaining": 2,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 12,
+    "remaining": 0,
+    "progress": 0.9642857142857143,
+    "minGoalProgress": 0.9285714285714286,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 71
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 10,
+    "remaining": 2,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 6,
+    "remaining": 8,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 2,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 33
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 6,
+    "remaining": 8,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 2,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 33
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 10,
+    "remaining": 3,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 7,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 28
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 8,
+    "remaining": 5,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 28
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 9,
+    "remaining": 5,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 7,
+    "remaining": 7,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 2,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 15,
+    "remaining": 0,
+    "progress": 0.875,
+    "minGoalProgress": 0.875,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 6,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 64
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 26
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 13,
+    "remaining": 2,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 6,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 7
+      },
+      {
+        "type": "click",
+        "index": 68
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 8,
+    "remaining": 7,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 60
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 11,
+    "remaining": 4,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 5,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 22
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 14,
+    "remaining": 1,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 2,
+    "created": 7,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 12,
+        "target": 4
+      },
+      {
+        "type": "click",
+        "index": 67
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 11,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 6,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 33
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 9,
+    "remaining": 8,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 5,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 37
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 11,
+    "remaining": 3,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 5,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 58,
+        "target": 66
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 46
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 7,
+    "remaining": 7,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 58,
+        "target": 66
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 13
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 11,
+    "remaining": 4,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51,
+        "target": 59
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 60
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 70,
+        "target": 71
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 11,
+    "remaining": 4,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 4,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51,
+        "target": 59
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 60
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 67,
+        "target": 68
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 70,
+        "target": 71
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 12,
+    "remaining": 5,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 7,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 58,
+        "target": 50
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 11,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 6,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 25,
+        "target": 33
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 50,
+        "target": 42
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 10,
+    "remaining": 7,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 2,
+    "created": 7,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 53
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 11,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 0,
+    "dice": 0,
+    "combo": 2,
+    "created": 8,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 41,
+        "target": 42
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 51
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 18,
+    "remaining": 0,
+    "progress": 0.95,
+    "minGoalProgress": 0.9,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 8,
+    "randomActions": 7,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 7
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 39
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 18
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 17,
+    "remaining": 1,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 3,
+    "created": 9,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 7
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 60
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 60
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 18,
+    "remaining": 0,
+    "progress": 0.95,
+    "minGoalProgress": 0.9,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 7,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 7
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 39
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 7,
+    "remaining": 8,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 21
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 7,
+    "remaining": 8,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 21
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 10,
+    "remaining": 8,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 69
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 16
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 12,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 69
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 25,
+        "target": 17
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 5,
+    "remaining": 14,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 2,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 59,
+        "target": 60
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 37
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 5,
+    "remaining": 14,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 2,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 59,
+        "target": 60
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 37
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 11,
+    "remaining": 9,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 29,
+        "target": 30
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 48
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 11,
+    "remaining": 9,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 1,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 29,
+        "target": 30
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "booster",
+        "kind": "dice"
+      },
+      {
+        "type": "click",
+        "index": 46
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 19,
+    "remaining": 3,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 6,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 27,
+        "target": 28
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 59,
+        "target": 51
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 40,
+        "target": 32
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 22,
+    "remaining": 0,
+    "progress": 0.9666666666666667,
+    "minGoalProgress": 0.9,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 12,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 50,
+        "target": 58
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 12
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 19,
+    "remaining": 3,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 6,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 26,
+        "target": 18
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 59,
+        "target": 67
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 48,
+        "target": 56
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 5,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 4,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 25
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 5,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 4,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 25
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 19,
+    "remaining": 0,
+    "progress": 0.75,
+    "minGoalProgress": 0.5,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 71
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 12,
+    "remaining": 7,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 35
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 12,
+    "remaining": 7,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 53,
+        "target": 61
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 9,
+    "remaining": 11,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 3,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 35
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 9,
+    "remaining": 11,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 3,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 35
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 21,
+    "remaining": 0,
+    "progress": 0.875,
+    "minGoalProgress": 0.875,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 6,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 39
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 69
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 37
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 17,
+    "remaining": 4,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 65
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 69
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 54,
+        "target": 62
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 14,
+    "remaining": 7,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 4,
+    "randomActions": 5,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 33,
+        "target": 41
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 22,
+    "remaining": 2,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 10,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 49
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 20,
+    "remaining": 4,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 9,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 50,
+        "target": 42
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 13
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 5,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 8,
+        "target": 9
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 35,
+        "target": 36
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 5,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 8,
+        "target": 9
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 35,
+        "target": 36
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 8,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 5,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19,
+        "target": 20
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 8,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 5,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19,
+        "target": 20
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 22,
+    "remaining": 0,
+    "progress": 0.95,
+    "minGoalProgress": 0.9,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 8,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 24
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 16,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 64
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 71
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 12,
+        "target": 4
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 45,
+        "target": 37
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 20,
+    "remaining": 2,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 9,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 57,
+        "target": 58
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 27,
+        "target": 28
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 14,
+    "remaining": 9,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 5,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 69
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 63
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 17,
+    "remaining": 6,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 1,
+    "dice": 0,
+    "combo": 2,
+    "created": 8,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 69
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 10,
+        "target": 11
+      },
+      {
+        "type": "click",
+        "index": 42,
+        "target": 50
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 57
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 8,
+    "remaining": 16,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 65
+      },
+      {
+        "type": "click",
+        "index": 51,
+        "target": 50
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 49,
+        "target": 41
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 29
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 8,
+    "remaining": 16,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 65
+      },
+      {
+        "type": "click",
+        "index": 51,
+        "target": 50
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 49,
+        "target": 41
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 29
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 19,
+    "remaining": 1,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 14
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 17,
+    "remaining": 3,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 7,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 61,
+        "target": 69
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 54,
+        "target": 53
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 62
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 19,
+    "remaining": 2,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 5,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 65
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 60
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 59
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 16,
+    "remaining": 5,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 2,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 65
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 60
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 44,
+        "target": 43
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 50
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 22,
+    "remaining": 0,
+    "progress": 0.9375,
+    "minGoalProgress": 0.875,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 19,
+        "target": 18
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 56
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 22,
+    "remaining": 0,
+    "progress": 0.9375,
+    "minGoalProgress": 0.875,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 9,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 19,
+        "target": 18
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 57,
+        "target": 49
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 22
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 18,
+    "remaining": 4,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 6,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 19,
+        "target": 20
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 41,
+        "target": 49
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 61
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 15,
+    "remaining": 8,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 6,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 48
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 14,
+    "remaining": 9,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 6,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 36,
+        "target": 44
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 25,
+    "remaining": 0,
+    "progress": 0.975,
+    "minGoalProgress": 0.9,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 6,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 8,
+        "target": 9
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 16,
+    "remaining": 9,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 8,
+        "target": 9
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 66,
+        "target": 58
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 20,
+    "remaining": 0,
+    "progress": 0.75,
+    "minGoalProgress": 0.5,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 6,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 27
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 7,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 3,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 8
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 7,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 3,
+    "randomActions": 0,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 8
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 23,
+    "remaining": 0,
+    "progress": 0.875,
+    "minGoalProgress": 0.75,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 5,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 69
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 13,
+    "remaining": 10,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 1,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 40
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 13,
+    "remaining": 10,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 1,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 48
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 12,
+    "remaining": 12,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 3,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 68
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 25
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 12,
+    "remaining": 12,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 3,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 68
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 25
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 25,
+    "remaining": 0,
+    "progress": 0.9375,
+    "minGoalProgress": 0.875,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 7,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19,
+        "target": 27
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 65
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 64
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 10
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 25,
+    "remaining": 0,
+    "progress": 0.9375,
+    "minGoalProgress": 0.875,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 6,
+    "randomActions": 7,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19,
+        "target": 27
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 65
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 64
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 37,
+        "target": 38
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 42,
+        "target": 43
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 39
+      },
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 52
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 14,
+    "remaining": 11,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19,
+        "target": 27
+      },
+      {
+        "type": "click",
+        "index": 66
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 66
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 71
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 26,
+    "remaining": 0,
+    "progress": 0.9583333333333333,
+    "minGoalProgress": 0.9166666666666666,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 1,
+    "randomActions": 6,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 10
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 26,
+    "remaining": 0,
+    "progress": 0.9583333333333333,
+    "minGoalProgress": 0.9166666666666666,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 6,
+    "randomActions": 6,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 27,
+        "target": 35
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 51
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 23,
+    "remaining": 0,
+    "progress": 0.8388888888888889,
+    "minGoalProgress": 0.6,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 62
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 23,
+    "remaining": 0,
+    "progress": 0.9666666666666667,
+    "minGoalProgress": 0.9,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 6,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 52,
+        "target": 53
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 66
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 64
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 22,
+    "remaining": 1,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 6,
+    "randomActions": 8,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 62
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 24,
+        "target": 32
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 39
+      },
+      {
+        "type": "click",
+        "index": 10,
+        "target": 18
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 57,
+        "target": 49
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 24,
+    "remaining": 0,
+    "progress": 0.9166666666666666,
+    "minGoalProgress": 0.75,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 2,
+    "randomActions": 7,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 70
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 7
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 12
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 24,
+    "remaining": 0,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 3,
+    "randomActions": 4,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 22
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 1,
+        "target": 0
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 42
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 22,
+    "remaining": 2,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 5,
+    "randomActions": 7,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 70
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 50
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 42,
+        "target": 34
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 39
+      },
+      {
+        "type": "click",
+        "index": 63
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 25,
+    "remaining": 0,
+    "progress": 0.9444444444444445,
+    "minGoalProgress": 0.8333333333333334,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 9,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 43,
+        "target": 44
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 70
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 69
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 10
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 24,
+    "remaining": 1,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 9,
+    "randomActions": 9,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 37
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 43,
+        "target": 44
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 70
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 11,
+        "target": 12
+      },
+      {
+        "type": "click",
+        "index": 18,
+        "target": 10
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 68
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 24
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 26,
+    "remaining": 0,
+    "progress": 0.9722222222222222,
+    "minGoalProgress": 0.9166666666666666,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 6,
+    "randomActions": 6,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 55
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 28
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 26,
+    "remaining": 0,
+    "progress": 0.9722222222222222,
+    "minGoalProgress": 0.9166666666666666,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 8,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 18,
+        "target": 26
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 49,
+        "target": 50
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 11
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 24,
+    "remaining": 2,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 6,
+    "randomActions": 6,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 23
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 63
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 39,
+        "target": 38
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 45
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "profile": "standard",
+    "sample": 1,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 28,
+    "remaining": 0,
+    "progress": 0.9791666666666666,
+    "minGoalProgress": 0.9166666666666666,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 4,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19,
+        "target": 18
+      },
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 68
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 11,
+        "target": 3
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 54
+      },
+      {
+        "type": "click",
+        "index": 9
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 26,
+    "remaining": 2,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 8,
+    "randomActions": 7,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19,
+        "target": 18
+      },
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 8,
+        "target": 0
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 32,
+        "target": 24
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 20
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 24,
+    "remaining": 4,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 1,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 7,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19,
+        "target": 18
+      },
+      {
+        "type": "click",
+        "index": 58
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 8,
+        "target": 0
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 38
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 17,
+        "target": 18
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 18
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 7,
+    "remaining": 15,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 3,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 11,
+        "target": 3
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 7,
+    "remaining": 15,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 3,
+    "randomActions": 1,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 43
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 11,
+        "target": 3
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 25,
+    "remaining": 0,
+    "progress": 0.9523809523809524,
+    "minGoalProgress": 0.8571428571428571,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 64
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 49
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 13
+      },
+      {
+        "type": "click",
+        "index": 15
+      },
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 39
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 25,
+    "remaining": 0,
+    "progress": 0.9761904761904763,
+    "minGoalProgress": 0.9285714285714286,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 1,
+    "dice": 0,
+    "combo": 1,
+    "created": 7,
+    "randomActions": 3,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 48
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 44
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 47
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 64
+      },
+      {
+        "type": "click",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 42
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 17,
+        "target": 18
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 34,
+        "target": 26
+      },
+      {
+        "type": "click",
+        "index": 36,
+        "target": 28
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 0
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 19
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": true,
+    "turns": 13,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 7,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51,
+        "target": 50
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 38,
+        "target": 30
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 36,
+        "target": 44
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 37,
+        "target": 38
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 51
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": true,
+    "turns": 13,
+    "remaining": 13,
+    "progress": 1,
+    "minGoalProgress": 1,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 7,
+    "randomActions": 2,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 51,
+        "target": 50
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 38,
+        "target": 30
+      },
+      {
+        "type": "click",
+        "index": 12
+      },
+      {
+        "type": "click",
+        "index": 36,
+        "target": 44
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 37,
+        "target": 38
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 67
+      },
+      {
+        "type": "click",
+        "index": 51
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 27,
+    "remaining": 0,
+    "progress": 0.8373015873015872,
+    "minGoalProgress": 0.7142857142857143,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 5,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 68
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 4
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 20
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 16
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 28
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 27,
+    "remaining": 0,
+    "progress": 0.9642857142857143,
+    "minGoalProgress": 0.8571428571428571,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 0,
+    "glove": 1,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 8,
+    "randomActions": 5,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 26
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 52
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 68
+      },
+      {
+        "type": "click",
+        "index": 36
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 28
+      },
+      {
+        "type": "click",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 53
+      },
+      {
+        "type": "click",
+        "index": 11
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 17
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "booster",
+        "kind": "glove",
+        "index": 28,
+        "target": 36
+      },
+      {
+        "type": "click",
+        "index": 24,
+        "target": 25
+      },
+      {
+        "type": "click",
+        "index": 8
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 56
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 18
+      },
+      {
+        "type": "click",
+        "index": 33,
+        "target": 25
+      },
+      {
+        "type": "click",
+        "index": 61
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 40
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": false,
+    "guided": true,
+    "won": false,
+    "turns": 28,
+    "remaining": 0,
+    "progress": 0.9573863636363636,
+    "minGoalProgress": 0.875,
+    "shuffles": 0,
+    "uses": 0,
+    "hammer": 0,
+    "glove": 0,
+    "watering": 0,
+    "dice": 0,
+    "combo": 0,
+    "created": 4,
+    "randomActions": 8,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 2
+      },
+      {
+        "type": "click",
+        "index": 32
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 35
+      },
+      {
+        "type": "click",
+        "index": 3
+      },
+      {
+        "type": "click",
+        "index": 34
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 45
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "profile": "standard",
+    "sample": 0,
+    "assisted": true,
+    "guided": true,
+    "won": false,
+    "turns": 28,
+    "remaining": 0,
+    "progress": 0.984375,
+    "minGoalProgress": 0.9375,
+    "shuffles": 0,
+    "uses": 2,
+    "hammer": 1,
+    "glove": 0,
+    "watering": 1,
+    "dice": 0,
+    "combo": 0,
+    "created": 7,
+    "randomActions": 8,
+    "stall": false,
+    "actions": [
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 30
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 46
+      },
+      {
+        "type": "click",
+        "index": 10
+      },
+      {
+        "type": "click",
+        "index": 51
+      },
+      {
+        "type": "click",
+        "index": 59
+      },
+      {
+        "type": "click",
+        "index": 19
+      },
+      {
+        "type": "click",
+        "index": 14
+      },
+      {
+        "type": "click",
+        "index": 6
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 31
+      },
+      {
+        "type": "click",
+        "index": 1
+      },
+      {
+        "type": "booster",
+        "kind": "watering",
+        "index": 29
+      },
+      {
+        "type": "click",
+        "index": 21
+      },
+      {
+        "type": "booster",
+        "kind": "hammer",
+        "index": 33
+      },
+      {
+        "type": "click",
+        "index": 37,
+        "target": 29
+      },
+      {
+        "type": "click",
+        "index": 40
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 27
+      },
+      {
+        "type": "click",
+        "index": 24
+      },
+      {
+        "type": "click",
+        "index": 5
+      },
+      {
+        "type": "click",
+        "index": 25
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 41
+      },
+      {
+        "type": "click",
+        "index": 65
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 57
+      },
+      {
+        "type": "click",
+        "index": 26
+      }
+    ]
+  }
+]
