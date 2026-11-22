@@ -1,0 +1,19 @@
+{
+  "tap": 70,
+  "charge": 260,
+  "release": 340,
+  "clear": 220,
+  "breath": 50,
+  "fallMin": 240,
+  "fallPerRow": 22,
+  "fallMax": 440,
+  "columnDelay": 8,
+  "settle": 45,
+  "resultPause": 500,
+  "swap": 240,
+  "launch": 580,
+  "comboFuse": 220,
+  "rainbowLink": 380,
+  "impact": 180,
+  "comboStagger": 55
+}
