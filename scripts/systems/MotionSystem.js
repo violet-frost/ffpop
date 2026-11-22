@@ -41,21 +41,26 @@ async function run({game,before,response,clicked,commit,signal,onPhase}){
  }
  function release(){
   if(reduced())return 0;
-  const {svg,rect}=makeFX();let endTime=0;
+  const {svg,rect}=makeFX();let endTime=0,petalCount=0;
+  const sparked=new Set(),launched=new Set();
   const palette=['#ef92b1','#f4ce6f','#9ecb7d','#85d2c4','#b39ade','#94c8ed'];
   const point=index=>{const item=byIndex(index);return item?{x:item.rect.left+item.rect.width/2-rect.left,y:item.rect.top+item.rect.height/2-rect.top,size:item.rect.width,item}:null;};
   const fx=(node,frames,duration,delay=0,easing='ease-out')=>{animate(node,frames,{duration,delay,easing,fill:'both'});endTime=Math.max(endTime,delay+duration);return node;};
   const fade=[{opacity:0},{opacity:1,offset:.18},{opacity:.8,offset:.65},{opacity:0}];
   function spark(x,y,size,delay,color='#fff1a0'){
+   // One burst per position per release; six rays share one animated path.
+   const key=`${Math.round(x)},${Math.round(y)}`;if(sparked.has(key))return;sparked.add(key);
    const g=shape(svg,'g',{'class':'impact-spark',transform:`translate(${x} ${y})`});
-   for(let n=0;n<6;n++){const a=n*Math.PI/3,c=Math.cos(a),d=Math.sin(a);const ray=shape(g,'line',{x1:c*size*.1,y1:d*size*.1,x2:c*size*.32,y2:d*size*.32,stroke:color,'stroke-width':2,'stroke-linecap':'round'});fx(ray,[{transform:'scale(.3)',opacity:0},{transform:'scale(1)',opacity:1,offset:.3},{transform:'scale(1.6)',opacity:0}],TIMING.impact,delay);}
+   const d=Array.from({length:6},(_,n)=>{const a=n*Math.PI/3,c=Math.cos(a),s=Math.sin(a);return `M${c*size*.1} ${s*size*.1}L${c*size*.32} ${s*size*.32}`;}).join('');
+   const ray=shape(g,'path',{d,fill:'none',stroke:color,'stroke-width':2,'stroke-linecap':'round'});
+   fx(ray,[{transform:'scale(.3)',opacity:0},{transform:'scale(1)',opacity:1,offset:.3},{transform:'scale(1.6)',opacity:0}],TIMING.impact,delay);
   }
   function wave(x,y,radius,delay,color='#ffe6a0',layersCount=2){
    for(let n=0;n<layersCount;n++){
     const ring=shape(svg,'circle',{'class':'blast-ring',cx:x,cy:y,r:radius,fill:n?'none':color+'33',stroke:color,'stroke-width':n?2:5});ring.style.transformOrigin=`${x}px ${y}px`;
     fx(ring,[{transform:'scale(.08)',opacity:0},{transform:'scale(.55)',opacity:1,offset:.32},{transform:'scale(1.12)',opacity:0}],TIMING.launch,delay+n*65);
    }
-   for(let n=0;n<10;n++){const a=n*2.3999,dx=Math.cos(a)*radius,dy=Math.sin(a)*radius;const petal=shape(svg,'ellipse',{cx:x,cy:y,rx:3,ry:6,fill:palette[n%6]});petal.style.transformOrigin=`${x}px ${y}px`;fx(petal,[{transform:'translate(0,0) rotate(0deg)',opacity:0},{opacity:1,offset:.15},{transform:`translate(${dx}px,${dy}px) rotate(${n*63}deg)`,opacity:0}],TIMING.launch,delay);}
+   for(let n=0;n<10&&petalCount<48;n++,petalCount++){const a=n*2.3999,dx=Math.cos(a)*radius,dy=Math.sin(a)*radius;const petal=shape(svg,'ellipse',{cx:x,cy:y,rx:3,ry:6,fill:palette[n%6]});petal.style.transformOrigin=`${x}px ${y}px`;fx(petal,[{transform:'translate(0,0) rotate(0deg)',opacity:0},{opacity:1,offset:.15},{transform:`translate(${dx}px,${dy}px) rotate(${n*63}deg)`,opacity:0}],TIMING.launch,delay);}
   }
   function power(kind,axis,x,y,size,cls){
    const g=shape(svg,'g',{'class':cls});const nested=new DOMParser().parseFromString(Art.special(kind,axis),'image/svg+xml').documentElement;
@@ -64,6 +69,8 @@ async function run({game,before,response,clicked,commit,signal,onPhase}){
   }
   function launch(index,axis,delay=0){
    const p=point(index);if(!p)return;
+   // Share overlapping combo sweeps; all hits still resolve in BoardModel.
+   const key=axis+':'+(axis==='h'?game.row(index):game.col(index));if(launched.has(key))return;launched.add(key);
    const {x,y,size}=p,h=axis==='h';
    // Two visible, oppositely oriented noses sweep the complete row/column from the source.
    for(const direction of [1,-1]){

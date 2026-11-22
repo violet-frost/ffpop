@@ -1,0 +1,51 @@
+{
+  "cpuSlowdown": 4,
+  "viewport": "393x873",
+  "htmlBytes": 10802371,
+  "results": [
+    {
+      "name": "normal",
+      "nodes": 432,
+      "markup": 8427043,
+      "frames": 50,
+      "p95FrameMs": 16.800000000000182,
+      "maxFrameMs": 66.69999999999982,
+      "over50ms": 1,
+      "longTaskMs": [
+        62
+      ],
+      "peakAnimations": 13,
+      "peakEffects": 0,
+      "clean": true,
+      "LayoutCount": 6,
+      "RecalcStyleCount": 51,
+      "LayoutDuration": 0.01848,
+      "RecalcStyleDuration": 0.05675,
+      "ScriptDuration": 0.02341,
+      "TaskDuration": 0.27664
+    },
+    {
+      "name": "rainbow-rocket",
+      "nodes": 432,
+      "markup": 8427055,
+      "frames": 192,
+      "p95FrameMs": 33.30000000000018,
+      "maxFrameMs": 100,
+      "over50ms": 3,
+      "longTaskMs": [
+        80,
+        55,
+        50
+      ],
+      "peakAnimations": 321,
+      "peakEffects": 608,
+      "clean": true,
+      "LayoutCount": 97,
+      "RecalcStyleCount": 259,
+      "LayoutDuration": 0.05599,
+      "RecalcStyleDuration": 0.32735,
+      "ScriptDuration": 0.13048,
+      "TaskDuration": 2.13936
+    }
+  ]
+}

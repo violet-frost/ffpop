@@ -29,3 +29,5 @@ node tests/gravity.test.cjs验证8组规则边界；node tests/gravity.browser.t
 - `node tests/play-layout.browser.test.cjs`：四道具底栏、六种手机棋盘布局、消除与掉落阶段的动画时钟暂停/继续、退出取消/确认及重进清理。原提示、玩法、重开和设置从右上角暂停菜单进入。
 
 - `node tests/audio.browser.test.cjs`：用户指定规则文本、首页与局内真实音频信号、七种道具音效、音量滑块/静音/持久化、切歌与音频节点清理。
+
+- `node tests/performance.browser.test.cjs`: 393x873 / 4x CPU slowdown; ordinary clears and three rainbow combinations; effect animation/DOM budgets and cleanup. Results and limits: `docs/MOBILE_PERFORMANCE.md`.

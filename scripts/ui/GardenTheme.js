@@ -1,7 +1,7 @@
 const safeText=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const menuIcon=name=>name==='hint'?icon('spark'):name==='help'?Art.sprite('book','menu-art'):BloomAssets['ui_'+name]||icon(name);
 const catPortrait=()=>`<div class="cat-art illustrated-cat">${sceneImage('home')}</div>`;
-const sceneImage=(name,cls='')=>`<img class="scene-image ${cls}" src="${BloomAssets['garden_'+name]}" alt="" draggable="false">`;
+const sceneImage=(name,cls='')=>`<img class="scene-image ${cls}" src="${Art.assetURL('garden_'+name)}" alt="" draggable="false">`;
 const chapterStars=ch=>LEVELS.filter(l=>l.chapter===ch).reduce((sum,l)=>sum+(saved.stars[l.id]||0),0);
 const bottomNav=active=>`<nav class="bottom-nav" aria-label="主导航">${[['home','主页','home'],['levels','关卡','map'],['placeholder','成就','achievement'],['placeholder','好友','friends']].map(([action,label,symbol])=>`<button data-action="${action}" data-title="${label}" class="${active===label?'active':''}" ${active===label?'aria-current="page"':''}>${menuIcon(symbol)}<span>${label}</span></button>`).join('')}</nav>`;
 function endTurnView(){BloomMotion.resume();cancelBooster();cancelRainbow();turnAbort?.abort();session++;clearTimeout(turnTimer);clearTimeout(resultTimer);clearTimeout(toastTimer);$('#toast').classList.remove('visible');locked=false;}
