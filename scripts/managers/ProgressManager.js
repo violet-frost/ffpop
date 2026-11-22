@@ -1,0 +1,4 @@
+let saved={stars:{},sound:true,announcedChapters:[]};try{const data=JSON.parse(localStorage.getItem(BloomData.CONFIG.storageKey));if(data&&typeof data.stars==='object'&&data.stars){for(const [key,value]of Object.entries(data.stars))if(Number(key)>=1&&Number(key)<=50&&Number.isInteger(value)&&value>=1&&value<=3)saved.stars[key]=value;}if(Array.isArray(data?.announcedChapters))saved.announcedChapters=[...new Set(data.announcedChapters.filter(n=>Number.isInteger(n)&&n>=1&&n<=4))];if(typeof data?.sound==='boolean')saved.sound=data.sound;}catch{}
+function persist(){try{localStorage.setItem(BloomData.CONFIG.storageKey,JSON.stringify(saved));}catch{}}
+function nextLevel(){for(let n=1;n<=50;n++)if(!saved.stars[n])return n;return 50;}
+function completeCount(){return Object.keys(saved.stars).length;}

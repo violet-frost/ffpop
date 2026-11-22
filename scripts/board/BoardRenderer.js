@@ -1,0 +1,2 @@
+function cellHTML(t,i,old){if(!t)return `<span class="cell hole" role="presentation"></span>`;const label=(t.ice?'冰层中的':'')+(t.kind==='normal'?NAMES[t.color]:t.kind==='box'?'木箱':SPECIAL_NAMES[t.kind]);return /* VIEW:board/Cell.html */;}
+function update(old){$('#moves').classList.toggle('low',game.moves<=5);$('#moves strong').textContent=game.moves;$('#goals').innerHTML=game.level.goals.map(g=>goalHTML(g)).join('');$('#score').textContent=game.score.toLocaleString();updateMeter();$('#board').innerHTML=game.board.map((t,i)=>cellHTML(t,i)).join('');}

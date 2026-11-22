@@ -1,0 +1,109 @@
+# 花果点点乐 · Bloom & Pop
+
+原生 HTML/CSS/JavaScript 网页 Demo。保持当前实现的花园首页、花朵水果立体画风、道路关卡地图、50 关点击消除、Android 竖屏布局及较舒缓的道具与掉落节奏。
+
+**双击根目录 `index.html` 即可离线游玩。** 不需要 Godot、Node、Python、服务器或联网。手机浏览器可通过普通静态网站地址打开同一个 HTML；本次只整理本地工程，未部署网站或导出 APK。
+
+## 项目结构
+
+```text
+乐信圣文AI测试2/
+├── index.html                    # 可直接打开的单文件网页（构建产物）
+├── build.py                      # 标准库构建，无第三方依赖
+├── AGENTS.md
+├── README.md
+├── docs/
+│   ├── GAME_DESIGN_DOCUMENT.md
+│   ├── LEVEL_DESIGN.md
+│   └── TEST_PLAN.md
+├── scenes/                       # 实际参与构建的 HTML 模板片段
+│   ├── main/Main.html            # 网页骨架及脚本注入位置
+│   ├── menu/
+│   │   ├── MainMenu.html         # 全屏花园首页
+│   │   └── LevelSelect.html      # 章节与选关弹窗
+│   ├── game/Game.html            # 目标、棋盘及底部操作
+│   ├── board/
+│   │   ├── Board.html
+│   │   └── Cell.html
+│   └── ui/
+│       ├── ResultPanel.html      # 结果页共用布局
+│       ├── VictoryPanel.html
+│       ├── FailPanel.html
+│       └── PausePanel.html       # 沿用原 Demo 的重开确认弹窗
+├── scripts/
+│   ├── managers/                # 页面流程、本地进度、Node 关卡读取
+│   ├── board/                   # 确定性规则及棋盘渲染
+│   ├── systems/                 # 分阶段动画、合成音效、粒子反馈
+│   ├── entities/                # 花果定义、SVG 资源接口
+│   └── ui/                      # 样式、页头、目标及弹窗
+├── data/
+│   ├── levels/level_001.json … level_050.json
+│   └── config/                  # 章节、动画和基础配置
+├── assets/
+│   ├── textures/                # 原实现导出的原创 SVG，可编辑
+│   ├── fonts/                   # 系统字体策略说明
+│   ├── audio/                   # Web Audio 合成策略说明
+│   └── effects/                 # 原生矢量特效说明
+└── tests/                       # 规则、迁移对比、构建与浏览器测试
+```
+
+原要求中的 `project.godot`、`.tscn` 和 `res://` 已对应为网页入口、HTML 模板和项目相对路径。没有引擎文件。
+
+## 修改与构建
+
+在此文件夹打开终端，执行：
+
+```powershell
+python build.py
+```
+
+构建器按顺序读取 50 关 JSON、章节与动画配置、SVG 素材、脚本和页面模板，全部内联进 `index.html`。浏览器运行时没有 fetch、外部字体、远程图片或模块加载，保持 file:// 直接打开可玩。
+
+模板是 JavaScript 模板字符串的内容，支持 `${...}`；构建器展开 VIEW 和 SCRIPT 标记，脚本片段共享 GameManager 的闭包。它们不是可以单独打开的完整页面，也不是 ES Modules。修改界面请编辑相应模板，修改玩法请编辑 `scripts/board/BoardModel.js`，修改掉落节奏请编辑 `data/config/motion.json`，修改某关请编辑该关 JSON。
+
+## 核心内容
+
+- 横竖相邻 2 个同色花果即可点击消除；有效点击耗 1 步，对角相邻不计算。
+- 5/7/9 连消生成火箭、花瓣炸弹、彩虹花；支持连锁及相邻道具组合。
+- 木箱、冰层、棋盘缺口；无解自动重排，不额外耗步。
+- 顶部目标与步数，底部提示、重开、选关；成功/失败结果页；本地星级与音效开关。
+- 手机画布最大宽度 480px，使用动态视口与安全区。首页主按钮进入下一待完成关卡，全部 50 关均可直接选择。
+- 回合依次播放蓄力、释放、消除、停顿、分列掉落与落地回弹。掉落基础 460ms，按距离增加，最长 760ms；期间锁定棋盘，切页会取消旧动画。
+
+未增加体力、货币、养成等外围系统。本地进度保存在当前浏览器；不同文件路径或域名下的 file:// 存储行为可能不同，不自动迁移原文件的记录。存储不可用时仍可游玩。
+
+## 验证
+
+```powershell
+node tests/engine.test.cjs
+node tests/rainbow.test.cjs
+node tests/parity.test.cjs
+python tests/test_build.py
+node tests/ui-flow.browser.test.cjs
+node tests/browser.test.cjs
+node tests/effects.browser.test.cjs
+```
+
+规则测试包含 18 项检查及全部 50 关自动试玩。原始回放基准保留 1410 回合，现校验首次主动彩虹交换之前的 1043 回合；新彩虹规则单独验证。50 关使用同一固定种子及不同合法选择验证可完成性。浏览器检查包含首页、选关、设置、实际点击到胜负结果、道具动画、取消与锁定、进度保存和六种手机尺寸；详情见 `docs/TEST_PLAN.md`。
+
+关卡难度仍为 Demo 配置；自动试玩验证逻辑可完成性，不能代替真人难度平衡。手机验证使用 Chrome 视口模拟，未进行 Android 真机测试。
+
+彩虹花：先点击选中（轮廓发光），再点击上下左右的相邻棋子交换并消除全盘同类；点非相邻格子、空白或再次点击自身取消，不耗步。冰冻棋子需先融化。火箭保留随机横向/纵向及整行/整列规则，发射时以朝向对应的双向火箭覆盖完整轴线。组合道具加入融合、转化、齐射和分层冲击波。
+
+## 2026-11-23 全套界面改版
+
+- 主页采用手绘花园与白猫园丁，任务/活动在左、商店在右，小设置按钮在右上；底部主页、关卡、成就、好友。任务/活动/商店/成就/好友只打开空白内容面板，不实现外围系统。
+- 关卡页为可滚动的道路地图，每章 10 个节点、共 5 章；关卡按钮叠在实际道路上，两侧保留樱花、瀑布、小屋等风景。章节星数来自实际保存的关卡星级；Demo 的 50 关仍均可选择。
+- 主页开始与地图节点先打开本关目标/步数和“开始游戏”确认，不直接进入对局；局内采用白猫头像、目标卡、步数、进度条、木框棋盘和圆形操作栏。
+- 立体花果、彩虹交换、横纵火箭及六种组合玩法保持。结算、失败、重开、设置、玩法、章节解锁统一为奶油面板、木质边框和红色缎带。完成一章全部 10 关后，结算继续会显示下一章解锁面板；该提示会持久保存，避免重复弹出。
+- `scripts/ui/GardenTheme.js` 管理地图、目标确认、导航和章节展示；`assets/illustrations/` 保存两张内置 imagegen 场景及生成提示词。构建时把 JPEG 内嵌为 data URI，交付 HTML 约 1.4 MB，仍可完全离线打开。
+
+新增 `node tests/ui-flow.browser.test.cjs` 覆盖新 UI 流程；浏览器截图在 `tests/screenshots/redesign-*.png`。
+
+## 花果与道具美术统一
+
+花果、火箭、炸弹、彩虹花和木箱采用与花园场景一致的暖光立体绘本素材，木材与黄铜道具质感统一；目标图标和动画复用同一图集。透明图集位于 assets/textures/garden_pieces.png，生成提示词见 assets/illustrations/PROMPTS.md。冰层使用透明晶面 SVG，保留花果辨识度。离线构建同时内嵌 PNG 与 JPEG。
+
+## 方案一关卡改版与编辑工具
+
+50关已采用固定手工布局与道具空间策略；新增`level-editor.html`离线关卡编辑器。完整布局、节奏和目标见`docs/LEVEL_DESIGN.md`，编辑器与Excel往返使用见`docs/LEVEL_EDITOR.md`。
