@@ -189,10 +189,31 @@ const flower=(x,y,s,color,center='#ffdb72',rotation=0)=>`<g transform="translate
 // Keep the atlas AND clip outside cells: animation hides originals while clones use them.
 // Per-cell duplicate clip IDs inherit hidden visibility and make moving sprites disappear.
 const pieceNames=['strawberry','lemon','grapes','flower_pink','sunflower','flower_blue','rocket','bomb','rainbow','box','hammer','book'];
-const spriteDefs=()=>`<svg class="piece-library" xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs><clipPath id="garden-piece-clip"><rect width="64" height="64"/></clipPath><image id="garden-piece-atlas" width="1448" height="1086" href="${assetURL('garden_pieces')}"/></defs></svg>`;
+const spriteURLs=new Map();let spritePreparation;
+const svgNS='http://www.w3.org/2000/svg';
+function prepareSprites(){
+ if(spritePreparation)return spritePreparation;
+ spritePreparation=(async()=>{
+  const atlas=new Image();atlas.src=assetURL('garden_pieces');await atlas.decode();
+  // Small independent raster surfaces avoid repeatedly filtering/clipping the full atlas.
+  for(let index=0;index<pieceNames.length;index++){
+   const name=pieceNames[index],canvas=document.createElement('canvas');canvas.width=canvas.height=192;
+   const ctx=canvas.getContext('2d');ctx.drawImage(atlas,(index%4)*362,Math.floor(index/4)*362,362,362,0,0,192,192);
+   const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)continue;
+   const url=URL.createObjectURL(blob);spriteURLs.set(name,url);
+   const old=document.getElementById('garden-piece-'+name);
+   if(old){const image=document.createElementNS(svgNS,'image');image.id=old.id;image.setAttribute('width','64');image.setAttribute('height','64');image.setAttribute('href',url);old.replaceWith(image);}
+  }
+ })().catch(()=>{});return spritePreparation;
+}
+function spriteDefs(){
+ // Prepare after the current render; the vector/atlas fallback is immediately usable.
+ if(!spritePreparation)setTimeout(prepareSprites,0);
+ return `<svg class="piece-library" xmlns="${svgNS}" width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs><clipPath id="garden-piece-clip"><rect width="64" height="64"/></clipPath><image id="garden-piece-atlas" width="1448" height="1086" href="${assetURL('garden_pieces')}"/>${pieceNames.map((name,index)=>spriteURLs.has(name)?`<image id="garden-piece-${name}" width="64" height="64" href="${spriteURLs.get(name)}"/>`:`<g id="garden-piece-${name}" clip-path="url(#garden-piece-clip)"><g transform="scale(${64/362}) translate(${-(index%4)*362} ${-Math.floor(index/4)*362})"><use href="#garden-piece-atlas"/></g></g>`).join('')}</defs></svg>`;
+}
 function sprite(name,cls='fruit',angle=0){
- const index=pieceNames.indexOf(name),x=(index%4)*362,y=Math.floor(index/4)*362;
- return wrap(`<g transform="rotate(${angle} 32 32)"><g clip-path="url(#garden-piece-clip)"><g transform="scale(${64/362}) translate(${-x} ${-y})"><use href="#garden-piece-atlas"/></g></g></g>`,cls);
+ if(!pieceNames.includes(name))name='strawberry';
+ return wrap(`<g transform="rotate(${angle} 32 32)"><use href="#garden-piece-${name}"/></g>`,cls);
 }
 const token=color=>sprite(pieceNames[color]||'strawberry');
 const icon=(name,cls='')=>(assets['icon_'+name]||assets.icon_leaf).replace('class="icon "',`class="icon ${cls}"`);

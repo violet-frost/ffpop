@@ -1,0 +1,203 @@
+{
+  "viewport": "393x873",
+  "deviceScaleFactor": 3,
+  "cpuSlowdown": 6,
+  "cold": [
+    {
+      "selector": ".home-start",
+      "handlerMs": 251.30000001192093
+    },
+    {
+      "selector": "[data-action=\"start\"]",
+      "handlerMs": 127.5
+    }
+  ],
+  "results": [
+    {
+      "name": "bottom-clear",
+      "handlerMs": 23.69999998807907,
+      "reads": {
+        "idle": 73,
+        "fall": 73
+      },
+      "replaced": 0,
+      "clones": 72,
+      "preservedCells": 72,
+      "longTasks": [
+        {
+          "start": 2459.199999988079,
+          "ms": 70
+        },
+        {
+          "start": 2712.399999976158,
+          "ms": 125
+        },
+        {
+          "start": 2838.199999988079,
+          "ms": 51
+        },
+        {
+          "start": 2979,
+          "ms": 65
+        }
+      ],
+      "byPhase": {
+        "select": {
+          "samples": 6,
+          "p95": 50,
+          "max": 50
+        },
+        "clear": {
+          "samples": 18,
+          "p95": 66.60000000000036,
+          "max": 66.60000000000036
+        },
+        "pause": {
+          "samples": 3,
+          "p95": 16.700000000000273,
+          "max": 16.700000000000273
+        },
+        "fall": {
+          "samples": 18,
+          "p95": 166.70000000000027,
+          "max": 166.70000000000027
+        },
+        "idle": {
+          "samples": 4,
+          "p95": 16.699999999999818,
+          "max": 16.699999999999818
+        }
+      },
+      "clean": true,
+      "LayoutCount": 6,
+      "LayoutDuration": 0.03712,
+      "RecalcStyleDuration": 0.15667,
+      "ScriptDuration": 0.03439,
+      "TaskDuration": 0.77902
+    },
+    {
+      "name": "bottom-clear-repeat",
+      "handlerMs": 11,
+      "reads": {
+        "idle": 73,
+        "fall": 73
+      },
+      "replaced": 0,
+      "clones": 72,
+      "preservedCells": 72,
+      "longTasks": [
+        {
+          "start": 4033,
+          "ms": 58
+        }
+      ],
+      "byPhase": {
+        "select": {
+          "samples": 4,
+          "p95": 33.30000000000018,
+          "max": 33.30000000000018
+        },
+        "clear": {
+          "samples": 19,
+          "p95": 33.399999999999636,
+          "max": 33.399999999999636
+        },
+        "pause": {
+          "samples": 3,
+          "p95": 16.700000000000273,
+          "max": 16.700000000000273
+        },
+        "fall": {
+          "samples": 25,
+          "p95": 16.700000000000728,
+          "max": 100
+        },
+        "idle": {
+          "samples": 6,
+          "p95": 16.700000000000728,
+          "max": 16.700000000000728
+        }
+      },
+      "clean": true,
+      "LayoutCount": 6,
+      "LayoutDuration": 0.01641,
+      "RecalcStyleDuration": 0.19176,
+      "ScriptDuration": 0.02474,
+      "TaskDuration": 0.68546
+    },
+    {
+      "name": "segment-shuffle",
+      "handlerMs": 45.5,
+      "reads": {
+        "idle": 73,
+        "fall": 73
+      },
+      "replaced": 0,
+      "clones": 70,
+      "preservedCells": 72,
+      "longTasks": [
+        {
+          "start": 5018.899999976158,
+          "ms": 63
+        },
+        {
+          "start": 5086.899999976158,
+          "ms": 98
+        },
+        {
+          "start": 5192.300000011921,
+          "ms": 104
+        },
+        {
+          "start": 5304.300000011921,
+          "ms": 80
+        },
+        {
+          "start": 5389.100000023842,
+          "ms": 98
+        },
+        {
+          "start": 5487.5,
+          "ms": 61
+        },
+        {
+          "start": 6051.399999976158,
+          "ms": 53
+        }
+      ],
+      "byPhase": {
+        "select": {
+          "samples": 5,
+          "p95": 50,
+          "max": 50
+        },
+        "clear": {
+          "samples": 7,
+          "p95": 100,
+          "max": 100
+        },
+        "pause": {
+          "samples": 1,
+          "p95": 116.59999999999945,
+          "max": 116.59999999999945
+        },
+        "fall": {
+          "samples": 32,
+          "p95": 100.10000000000036,
+          "max": 150
+        },
+        "idle": {
+          "samples": 5,
+          "p95": 50,
+          "max": 50
+        }
+      },
+      "clean": true,
+      "LayoutCount": 8,
+      "LayoutDuration": 0.07206,
+      "RecalcStyleDuration": 0.27552,
+      "ScriptDuration": 0.02772,
+      "TaskDuration": 0.9844
+    }
+  ]
+}

@@ -35,8 +35,20 @@ function unlockAudio(){
 }
 async function musicBuffer(scene){
  if(!audioMix.buffers.has(scene)){
-  const raw=atob(BloomAssets['music_'+scene].split(',')[1]),bytes=Uint8Array.from(raw,c=>c.charCodeAt(0));
-  audioMix.buffers.set(scene,audioContext.decodeAudioData(bytes.buffer).catch(()=>null));
+  // Yield between bounded chunks; first gestures and scene changes can paint immediately.
+  const pending=(async()=>{
+   await new Promise(resolve=>setTimeout(resolve,0));
+   const encoded=BloomAssets['music_'+scene].split(',')[1];
+   const padding=encoded.endsWith('==')?2:encoded.endsWith('=')?1:0,bytes=new Uint8Array(encoded.length/4*3-padding);
+   let offset=0;
+   for(let start=0;start<encoded.length;start+=65536){
+    const raw=atob(encoded.slice(start,start+65536));
+    for(let i=0;i<raw.length;i++)bytes[offset++]=raw.charCodeAt(i);
+    if(start+65536<encoded.length)await new Promise(resolve=>setTimeout(resolve,0));
+   }
+   return audioContext.decodeAudioData(bytes.buffer);
+  })().catch(()=>null);
+  audioMix.buffers.set(scene,pending);
  }
  return audioMix.buffers.get(scene);
 }

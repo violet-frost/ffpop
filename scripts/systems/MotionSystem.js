@@ -9,7 +9,7 @@ function resume(){if(!paused)return;paused=false;activeWaits.forEach(w=>w.resume
 const reduced=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 async function run({game,before,response,clicked,commit,signal,onPhase}){
  const board=document.querySelector('#board'),wrap=board.closest('.board-wrap');
- const animations=[],layers=[],hidden=[];
+ const animations=[],layers=[],hidden=[],movedArt=[];
  const displayed=before.slice();
  const old=new Map();
  before.forEach((tile,index)=>{const node=board.querySelector(`[data-cell="${index}"]`);if(tile&&node)old.set(tile.id,{tile,index,node,rect:node.getBoundingClientRect()});});
@@ -143,41 +143,47 @@ async function run({game,before,response,clicked,commit,signal,onPhase}){
   const bounds=wrap.getBoundingClientRect(),left=bounds.left+wrap.clientLeft,top=bounds.top+wrap.clientTop,slots=Array.from(board.children,n=>n.getBoundingClientRect()),pitchX=slots[1].left-slots[0].left,pitchY=slots[game.cols].top-slots[0].top;
   const layer=document.createElement('div');layer.className='fall-clip flow-layer';layer.setAttribute('aria-hidden','true');layer.style.cssText='inset:0;width:100%;height:100%';
   // Mask holes and intact boxes, while allowing paths to cross between neighboring columns.
-  const mask=slots.flatMap((r,i)=>game.isHole(game.row(i),game.col(i))||game.board[i]?.kind==='box'?[]:[`M${r.left-left-1.5} ${r.top-top-1.5}h${r.width+3}v${r.height+3}h${-r.width-3}Z`]).join(' ');layer.style.clipPath=`path('${mask}')`;wrap.append(layer);layers.push(layer);
+  const blocked=game.board.some((tile,i)=>game.isHole(game.row(i),game.col(i))||tile?.kind==='box');
+  if(blocked){const mask=slots.flatMap((r,i)=>game.isHole(game.row(i),game.col(i))||game.board[i]?.kind==='box'?[]:[`M${r.left-left-1.5} ${r.top-top-1.5}h${r.width+3}v${r.height+3}h${-r.width-3}Z`]).join(' ');layer.style.clipPath=`path('${mask}')`;}
+  else{const first=slots[0],last=slots.at(-1);layer.style.clipPath=`inset(${first.top-top-1.5}px ${wrap.clientWidth-(last.right-left)-1.5}px ${wrap.clientHeight-(last.bottom-top)-1.5}px ${first.left-left-1.5}px)`;}
+  layers.push(layer);const jobs=[];
   const routes=new Map(response.fallPaths.map(p=>[p.id,p])),entries=new Map();let longest=0;
   for(const node of board.querySelectorAll('[data-cell]')){const index=Number(node.dataset.cell),tile=game.board[index];if(!tile||tile.kind==='box')continue;const route=routes.get(tile.id),origin=old.get(tile.id);
    if(!route){if(!origin&&tile.kind!=='normal')animate(node,[{transform:'scale(.3)',opacity:0},{transform:'scale(1.15)',opacity:1,offset:.75},{transform:'scale(1)',opacity:1}],{duration:TIMING.fallMin,easing:'ease-out'});continue;}
    const end=slots[index];let parent=layer,entryTop=0;
    if(route.spawn&&route.entry>0){entryTop=slots[route.entry*game.cols].top-top-1.5;if(!entries.has(route.entry)){const clip=document.createElement('div');clip.className='flow-inlet-clip';clip.style.cssText=`position:absolute;left:0;right:0;top:${entryTop}px;bottom:0;overflow:hidden`;layer.append(clip);entries.set(route.entry,clip);}parent=entries.get(route.entry);}
-   const clone=node.cloneNode(true);for(const a of ['data-cell','data-tile-id','role','aria-label'])clone.removeAttribute(a);clone.tabIndex=-1;clone.classList.add('falling-tile');clone.dataset.fallId=tile.id;clone.classList.remove('hinted','changed','lesson-cell');clone.style.cssText=`position:absolute;left:${end.left-left}px;top:${end.top-top-entryTop}px;width:${end.width}px;height:${end.height}px;`;parent.append(clone);node.style.visibility='hidden';hidden.push(node);
+   const clone=document.createElement('span');clone.className=node.className;clone.tabIndex=-1;clone.classList.add('falling-tile');movedArt.push({node,clone});clone.append(...node.childNodes);clone.dataset.fallId=tile.id;clone.classList.remove('hinted','changed','lesson-cell');clone.style.cssText=`position:absolute;left:${end.left-left}px;top:${end.top-top-entryTop}px;width:${end.width}px;height:${end.height}px;`;parent.append(clone);node.style.visibility='hidden';hidden.push(node);
    const points=route.points.map(p=>({x:(p.col-game.col(index))*pitchX,y:(p.row-game.row(index))*pitchY})),lengths=[0];for(let k=1;k<points.length;k++)lengths.push(lengths[k-1]+Math.hypot(points[k].x-points[k-1].x,points[k].y-points[k-1].y));const distance=lengths.at(-1),duration=Math.min(TIMING.fallMax*1.8,TIMING.fallMin+distance/Math.max(1,end.height)*TIMING.fallPerRow),delay=game.col(index)*TIMING.columnDelay;
-   const frames=points.map((p,k)=>({transform:`translate(${p.x}px,${p.y}px)`,offset:distance?lengths[k]/distance:1,opacity:1}));animate(clone,frames,{duration,delay,easing:'linear',fill:'both'});longest=Math.max(longest,duration+delay);
+   const frames=points.map((p,k)=>({transform:`translate(${p.x}px,${p.y}px)`,offset:distance?lengths[k]/distance:1,opacity:1}));jobs.push([clone,frames,{duration,delay,easing:'linear',fill:'both'}]);longest=Math.max(longest,duration+delay);
   }
+  wrap.append(layer);for(const job of jobs)animate(...job);
   await wait(Math.max(longest,TIMING.fallMin)+TIMING.settle);
  }
  async function fall(){
-  commit();check();
+  cleanup();commit();check();
   if(reduced())return;
   if(response.fallPaths&&!response.shuffled)return fallFlow();
   const outer=wrap.getBoundingClientRect(),bounds={left:outer.left+wrap.clientLeft,top:outer.top+wrap.clientTop},elements=new Map(),slots=Array.from(board.children,node=>node.getBoundingClientRect());board.querySelectorAll('[data-cell]').forEach(node=>elements.set(Number(node.dataset.cell),node));
-  const clips=new Map(),segments=new Map();
+  const rowGap=parseFloat(getComputedStyle(board).rowGap);
+  const clips=new Map(),segments=new Map(),jobs=[];
   // A clip per column segment makes replacements emerge below boxes and gaps.
-  for(let c=0;c<game.cols;c++){let part=[];const flush=()=>{if(!part.length)return;const first=elements.get(part[0]).getBoundingClientRect(),last=elements.get(part[part.length-1]).getBoundingClientRect();const clip=document.createElement('div');clip.className='fall-clip';clip.setAttribute('aria-hidden','true');clip.style.cssText=`left:${first.left-bounds.left}px;top:${first.top-bounds.top}px;width:${first.width}px;height:${last.bottom-first.top+4}px;`;wrap.append(clip);layers.push(clip);const data={clip,left:first.left,top:first.top,newCount:part.filter(j=>!old.has(game.board[j]?.id)&&game.board[j]?.kind==='normal').length};part.forEach(j=>segments.set(j,data));part=[];};for(let r=0;r<game.rows;r++){const i=r*game.cols+c;if(!elements.has(i)||game.board[i]?.kind==='box')flush();else part.push(i);}flush();}
-  if(response.shuffled){const clip=document.createElement('div');clip.className='fall-clip';clip.setAttribute('aria-hidden','true');clip.style.cssText=`inset:0;width:100%;height:100%`;wrap.append(clip);layers.push(clip);clips.set('shuffle',{clip,left:bounds.left,top:bounds.top,newCount:0});}
+  if(!response.shuffled)for(let c=0;c<game.cols;c++){let part=[];const flush=()=>{if(!part.length)return;const first=slots[part[0]],last=slots[part[part.length-1]];const clip=document.createElement('div');clip.className='fall-clip';clip.setAttribute('aria-hidden','true');clip.style.cssText=`left:${first.left-bounds.left}px;top:${first.top-bounds.top}px;width:${first.width}px;height:${last.bottom-first.top+4}px;`;layers.push(clip);const data={clip,left:first.left,top:first.top,newCount:part.filter(j=>!old.has(game.board[j]?.id)&&game.board[j]?.kind==='normal').length};part.forEach(j=>segments.set(j,data));part=[];};for(let r=0;r<game.rows;r++){const i=r*game.cols+c;if(!elements.has(i)||game.board[i]?.kind==='box')flush();else part.push(i);}flush();}
+  if(response.shuffled){const clip=document.createElement('div');clip.className='fall-clip';clip.setAttribute('aria-hidden','true');clip.style.cssText=`inset:0;width:100%;height:100%`;layers.push(clip);clips.set('shuffle',{clip,left:bounds.left,top:bounds.top,newCount:0});}
   let longest=0;
-  for(const [index,node]of elements){const tile=game.board[index];if(!tile)continue;if(tile.kind==='box'&&!response.shuffled)continue;const end=node.getBoundingClientRect(),origin=old.get(tile.id);let dx=origin?slots[origin.index].left-end.left:0,dy=origin?slots[origin.index].top-end.top:0;
+  for(const [index,node]of elements){const tile=game.board[index];if(!tile)continue;if(tile.kind==='box'&&!response.shuffled)continue;const end=slots[index],origin=old.get(tile.id);let dx=origin?slots[origin.index].left-end.left:0,dy=origin?slots[origin.index].top-end.top:0;
    const segment=response.shuffled?clips.get('shuffle'):segments.get(index);if(!segment)continue;
-   if(!origin){if(response.created===tile.kind&&tile.kind!=='normal'){const clickedRect=slots[clicked];dx=clickedRect.left-end.left;dy=clickedRect.top-end.top;}else{const pitch=end.height+parseFloat(getComputedStyle(board).rowGap);dy=-(segment.newCount+.65)*pitch;}}
+   if(!origin){if(response.created===tile.kind&&tile.kind!=='normal'){const clickedRect=slots[clicked];dx=clickedRect.left-end.left;dy=clickedRect.top-end.top;}else{const pitch=end.height+rowGap;dy=-(segment.newCount+.65)*pitch;}}
    if(Math.abs(dx)<.5&&Math.abs(dy)<.5){if(!origin)animate(node,[{transform:'scale(.4)',opacity:0},{transform:'scale(1.12)',opacity:1,offset:.75},{transform:'scale(1)',opacity:1}],{duration:TIMING.fallMin,easing:'ease-out'});continue;}
-   const clone=node.cloneNode(true);clone.removeAttribute('data-cell');clone.removeAttribute('data-tile-id');clone.removeAttribute('role');clone.removeAttribute('aria-label');clone.tabIndex=-1;clone.classList.remove('hinted','changed');clone.classList.add('falling-tile');clone.style.cssText=`position:absolute;left:${end.left-segment.left}px;top:${end.top-segment.top}px;width:${end.width}px;height:${end.height}px;`;segment.clip.append(clone);node.style.visibility='hidden';hidden.push(node);
+   const clone=document.createElement('span');clone.className=node.className;clone.tabIndex=-1;clone.classList.remove('hinted','changed','lesson-cell');clone.classList.add('falling-tile');movedArt.push({node,clone});clone.append(...node.childNodes);clone.style.cssText=`position:absolute;left:${end.left-segment.left}px;top:${end.top-segment.top}px;width:${end.width}px;height:${end.height}px;`;segment.clip.append(clone);node.style.visibility='hidden';hidden.push(node);
    const distance=Math.hypot(dx,dy)/Math.max(1,end.height),duration=Math.min(TIMING.fallMax,TIMING.fallMin+distance*TIMING.fallPerRow),delay=game.col(index)*TIMING.columnDelay;
    const impact=Math.min(4,end.height*.09);
-   animate(clone,[{transform:`translate(${dx}px,${dy}px) scale(1,1.02)`,opacity:origin?1:.9},{transform:`translate(0,${impact}px) scale(1.025,.965)`,opacity:1,offset:.86},{transform:'translate(0,0) scale(1,1)',opacity:1}],{duration,delay,easing:'cubic-bezier(.4,0,.68,1)',fill:'both'});longest=Math.max(longest,duration+delay);
+   jobs.push([clone,[{transform:`translate(${dx}px,${dy}px) scale(1,1.02)`,opacity:origin?1:.9},{transform:`translate(0,${impact}px) scale(1.025,.965)`,opacity:1,offset:.86},{transform:'translate(0,0) scale(1,1)',opacity:1}],{duration,delay,easing:'cubic-bezier(.4,0,.68,1)',fill:'both'}]);longest=Math.max(longest,duration+delay);
   }
+  wrap.append(...layers);for(const job of jobs)animate(...job);
   await wait(Math.max(longest,TIMING.fallMin)+TIMING.settle);
  }
  board.classList.add('locked');board.setAttribute('aria-busy','true');
- const cleanup=()=>{animations.forEach(a=>{activeAnimations.delete(a);a.cancel();});layers.forEach(node=>node.remove());hidden.forEach(node=>node.style.removeProperty('visibility'));};
+ const cleanup=()=>{animations.forEach(a=>{activeAnimations.delete(a);a.cancel();});movedArt.forEach(({node,clone})=>node.append(...clone.childNodes));movedArt.length=0;layers.forEach(node=>node.remove());hidden.forEach(node=>node.style.removeProperty('visibility'));animations.length=0;layers.length=0;hidden.length=0;};
  signal.addEventListener('abort',cleanup,{once:true});
  try{
   await swap();
@@ -188,7 +194,9 @@ async function run({game,before,response,clicked,commit,signal,onPhase}){
   await wait(powered?TIMING.charge:TIMING.tap);
   if(powered){phase('release');const delay=release();await wait(delay);}
   phase('clear');let maxDelay=0;
-  for(const index of response.removed){const item=byIndex(index);if(!item)continue;const delay=Math.min((Math.abs(game.row(index)-game.row(clicked))+Math.abs(game.col(index)-game.col(clicked)))*12,95);maxDelay=Math.max(maxDelay,delay);const opacity=Number(getComputedStyle(item.node).opacity);animate(item.node,[{transform:'scale(1)',opacity},{transform:'scale(1.13)',opacity,offset:.25},{transform:'scale(.35)',opacity:0}],{duration:TIMING.clear,delay,easing:'ease-in',fill:'forwards'});}
+  // Read all animated opacities before scheduling any writes/keyframes.
+  const clearing=response.removed.map(index=>({index,item:byIndex(index)})).filter(x=>x.item).map(x=>({...x,opacity:Number(getComputedStyle(x.item.node).opacity)}));
+  for(const {index,item,opacity} of clearing){const delay=Math.min((Math.abs(game.row(index)-game.row(clicked))+Math.abs(game.col(index)-game.col(clicked)))*12,95);maxDelay=Math.max(maxDelay,delay);animate(item.node,[{transform:'scale(1)',opacity},{transform:'scale(1.13)',opacity,offset:.25},{transform:'scale(.35)',opacity:0}],{duration:TIMING.clear,delay,easing:'ease-in',fill:'forwards'});}
   for(const index of response.changed||[]){const item=byIndex(index);if(item)animate(item.node,[{filter:'brightness(1)'},{filter:'brightness(1.8) saturate(1.5)',transform:'scale(1.12)',offset:.5},{filter:'brightness(1)',transform:'scale(1)'}],{duration:TIMING.clear});}
   for(const index of response.melted){const item=byIndex(index);if(item)animate(item.node,[{filter:'brightness(1)'},{filter:'brightness(1.5)',offset:.4},{filter:'brightness(1)'}],{duration:TIMING.clear,easing:'ease-in-out'});}
   await wait(TIMING.clear+maxDelay);phase('pause');await wait(TIMING.breath);

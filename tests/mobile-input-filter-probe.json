@@ -1,0 +1,187 @@
+{
+  "viewport": "393x873",
+  "deviceScaleFactor": 3,
+  "cpuSlowdown": 6,
+  "cold": [
+    {
+      "selector": ".home-start",
+      "handlerMs": 243.39999997615814
+    },
+    {
+      "selector": "[data-action=\"start\"]",
+      "handlerMs": 128.80000001192093
+    }
+  ],
+  "results": [
+    {
+      "name": "bottom-clear",
+      "handlerMs": 29.400000035762787,
+      "reads": {
+        "idle": 73,
+        "fall": 73
+      },
+      "replaced": 0,
+      "clones": 72,
+      "preservedCells": 72,
+      "longTasks": [
+        {
+          "start": 2492.7000000476837,
+          "ms": 81
+        },
+        {
+          "start": 2784.400000035763,
+          "ms": 131
+        },
+        {
+          "start": 2915.5,
+          "ms": 69
+        }
+      ],
+      "byPhase": {
+        "idle": {
+          "samples": 7,
+          "p95": 33.19999999999982,
+          "max": 33.19999999999982
+        },
+        "select": {
+          "samples": 5,
+          "p95": 49.90000000000009,
+          "max": 49.90000000000009
+        },
+        "clear": {
+          "samples": 17,
+          "p95": 66.69999999999982,
+          "max": 66.69999999999982
+        },
+        "pause": {
+          "samples": 3,
+          "p95": 16.800000000000182,
+          "max": 16.800000000000182
+        },
+        "fall": {
+          "samples": 21,
+          "p95": 33.40000000000009,
+          "max": 200
+        }
+      },
+      "clean": true,
+      "LayoutCount": 6,
+      "LayoutDuration": 0.04092,
+      "RecalcStyleDuration": 0.23164,
+      "ScriptDuration": 0.0407,
+      "TaskDuration": 0.85327
+    },
+    {
+      "name": "bottom-clear-repeat",
+      "handlerMs": 13.300000011920929,
+      "reads": {
+        "idle": 73,
+        "fall": 73
+      },
+      "replaced": 0,
+      "clones": 72,
+      "preservedCells": 72,
+      "longTasks": [
+        {
+          "start": 4163.600000023842,
+          "ms": 79
+        },
+        {
+          "start": 4243.400000035763,
+          "ms": 64
+        }
+      ],
+      "byPhase": {
+        "select": {
+          "samples": 5,
+          "p95": 33.29999999999973,
+          "max": 33.29999999999973
+        },
+        "clear": {
+          "samples": 19,
+          "p95": 33.40000000000009,
+          "max": 33.40000000000009
+        },
+        "pause": {
+          "samples": 4,
+          "p95": 16.700000000000728,
+          "max": 16.700000000000728
+        },
+        "fall": {
+          "samples": 23,
+          "p95": 33.30000000000018,
+          "max": 150
+        },
+        "idle": {
+          "samples": 6,
+          "p95": 16.700000000000728,
+          "max": 16.700000000000728
+        }
+      },
+      "clean": true,
+      "LayoutCount": 6,
+      "LayoutDuration": 0.01803,
+      "RecalcStyleDuration": 0.21242,
+      "ScriptDuration": 0.0282,
+      "TaskDuration": 0.72532
+    },
+    {
+      "name": "segment-shuffle",
+      "handlerMs": 45.89999997615814,
+      "reads": {
+        "idle": 73,
+        "fall": 73
+      },
+      "replaced": 0,
+      "clones": 70,
+      "preservedCells": 72,
+      "longTasks": [
+        {
+          "start": 5128.100000023842,
+          "ms": 85
+        },
+        {
+          "start": 5465.300000011921,
+          "ms": 62
+        },
+        {
+          "start": 5527.5,
+          "ms": 72
+        }
+      ],
+      "byPhase": {
+        "select": {
+          "samples": 5,
+          "p95": 50,
+          "max": 50
+        },
+        "clear": {
+          "samples": 6,
+          "p95": 116.69999999999982,
+          "max": 116.69999999999982
+        },
+        "pause": {
+          "samples": 5,
+          "p95": 33.399999999999636,
+          "max": 33.399999999999636
+        },
+        "fall": {
+          "samples": 30,
+          "p95": 33.399999999999636,
+          "max": 116.60000000000036
+        },
+        "idle": {
+          "samples": 6,
+          "p95": 33.30000000000018,
+          "max": 33.30000000000018
+        }
+      },
+      "clean": true,
+      "LayoutCount": 7,
+      "LayoutDuration": 0.06264,
+      "RecalcStyleDuration": 0.24832,
+      "ScriptDuration": 0.02978,
+      "TaskDuration": 0.87224
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "cpuSlowdown": 4,
+  "viewport": "393x873",
+  "htmlBytes": 10807344,
+  "results": [
+    {
+      "name": "normal",
+      "nodes": 288,
+      "markup": 25896,
+      "frames": 50,
+      "p95FrameMs": 33.30000000000007,
+      "maxFrameMs": 50,
+      "over50ms": 0,
+      "longTaskMs": [
+        59,
+        50
+      ],
+      "peakAnimations": 13,
+      "peakEffects": 0,
+      "clean": true,
+      "LayoutCount": 6,
+      "RecalcStyleCount": 52,
+      "LayoutDuration": 0.01957,
+      "RecalcStyleDuration": 0.06317,
+      "ScriptDuration": 0.0306,
+      "TaskDuration": 0.3594
+    },
+    {
+      "name": "rainbow-rocket",
+      "nodes": 288,
+      "markup": 25902,
+      "frames": 188,
+      "p95FrameMs": 33.30000000000018,
+      "maxFrameMs": 183.4000000000001,
+      "over50ms": 2,
+      "longTaskMs": [
+        89,
+        120,
+        52
+      ],
+      "peakAnimations": 321,
+      "peakEffects": 510,
+      "clean": true,
+      "LayoutCount": 100,
+      "RecalcStyleCount": 190,
+      "LayoutDuration": 0.06535,
+      "RecalcStyleDuration": 0.52982,
+      "ScriptDuration": 0.15876,
+      "TaskDuration": 2.3524
+    },
+    {
+      "name": "rainbow-bomb",
+      "nodes": 288,
+      "markup": 25900,
+      "frames": 200,
+      "p95FrameMs": 33.19999999999982,
+      "maxFrameMs": 116.70000000000073,
+      "over50ms": 2,
+      "longTaskMs": [
+        84,
+        69
+      ],
+      "peakAnimations": 242,
+      "peakEffects": 204,
+      "clean": true,
+      "LayoutCount": 106,
+      "RecalcStyleCount": 202,
+      "LayoutDuration": 0.06298,
+      "RecalcStyleDuration": 0.52469,
+      "ScriptDuration": 0.20482,
+      "TaskDuration": 2.308
+    },
+    {
+      "name": "rainbow-rainbow",
+      "nodes": 288,
+      "markup": 25903,
+      "frames": 146,
+      "p95FrameMs": 16.799999999999272,
+      "maxFrameMs": 66.70000000000073,
+      "over50ms": 1,
+      "longTaskMs": [
+        53
+      ],
+      "peakAnimations": 258,
+      "peakEffects": 232,
+      "clean": true,
+      "LayoutCount": 61,
+      "RecalcStyleCount": 150,
+      "LayoutDuration": 0.02419,
+      "RecalcStyleDuration": 0.34078,
+      "ScriptDuration": 0.10511,
+      "TaskDuration": 1.33338
+    }
+  ]
+}

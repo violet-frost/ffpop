@@ -31,3 +31,5 @@ node tests/gravity.test.cjs验证8组规则边界；node tests/gravity.browser.t
 - `node tests/audio.browser.test.cjs`：用户指定规则文本、首页与局内真实音频信号、七种道具音效、音量滑块/静音/持久化、切歌与音频节点清理。
 
 - `node tests/performance.browser.test.cjs`: 393x873 / 4x CPU slowdown; ordinary clears and three rainbow combinations; effect animation/DOM budgets and cleanup. Results and limits: `docs/MOBILE_PERFORMANCE.md`.
+
+- `node tests/mobile-input.browser.test.cjs`：393×873、DPR 3、CPU 降速 6 倍；首次点击、大面积掉落、重排和真实触摸输入；检查格子保留、零克隆、美术归还与布局测量预算。详见 `docs/MOBILE_PERFORMANCE.md`。

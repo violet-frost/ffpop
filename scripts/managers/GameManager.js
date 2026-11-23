@@ -34,7 +34,7 @@ async function play(i,target,booster){
  const tip=$('#board-tip');tip.textContent=res.booster?BOOSTERS[res.booster].name+'正在施展…':res.fired.length?'道具正在绽放…':'正在收获花果…';
  $('#moves strong').textContent=game.moves;$('#moves').classList.toggle('low',game.moves<=5);
  try{
-  await BloomMotion.run({game,before,response:res,clicked:i,signal,commit:()=>update(),onPhase:phase=>{
+  await BloomMotion.run({game,before,response:res,clicked:i,signal,commit:()=>update(before),onPhase:phase=>{
    if(phase==='swap'&&res.booster==='glove')sound('glove');
    if(phase==='select'||phase==='release'){if(phase==='select'){if(res.booster!=='glove')sound(res.booster||'pop');}else{const kinds=new Set((res.effects||[]).map(e=>e.kind));if(res.combo)kinds.add('combo');if(!kinds.size)kinds.add('special');for(const kind of kinds)sound(kind);}if(rect)particles(rect.x+rect.width/2,rect.y+rect.height/2,res.combo?24:10);}
    if(phase==='clear'){if(res.created)sound('create');if(res.combo)praise('一起绽放！');else if(res.created)praise({rocket:'火箭发芽！',bomb:'花瓣绽放！',rainbow:'彩虹盛开！'}[res.created]);else if(res.count>=8)praise('好一场丰收！');}
